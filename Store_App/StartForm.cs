@@ -21,5 +21,16 @@ namespace Store_App
         {
             Application.Exit();
         }
+
+        private void SelectFormButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.selectForm.Show();
+        }
+
+        private void ExitAppButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
