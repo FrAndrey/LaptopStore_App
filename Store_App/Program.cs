@@ -20,8 +20,13 @@ namespace Store_App
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SelectForm());
-            //just for test
+
+            introForm = new IntroForm();
+            startForm = new StartForm();
+            selectForm = new SelectForm();
+
+            Application.Run(introForm);
+           
         }
     }
 }

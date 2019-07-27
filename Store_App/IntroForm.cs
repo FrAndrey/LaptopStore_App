@@ -15,6 +15,15 @@ namespace Store_App
         public IntroForm()
         {
             InitializeComponent();
+            SplashTimer.Enabled = true;
+        }
+
+        private void SplashTimer_Tick(object sender, EventArgs e)
+        {
+            SplashTimer.Enabled = false;
+            this.Hide();
+            Program.startForm.Show();
+
         }
     }
 }

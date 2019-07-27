@@ -16,5 +16,11 @@ namespace Store_App
         {
             InitializeComponent();
         }
+
+        private void SelectForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
