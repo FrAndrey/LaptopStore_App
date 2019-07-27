@@ -17,6 +17,7 @@ namespace Store_App
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            //just for test
         }
     }
 }
