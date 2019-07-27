@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Store_App
 {
-    public partial class MainForm : Form
+    public partial class SelectForm : Form
     {
-        public MainForm()
+        public SelectForm()
         {
             InitializeComponent();
         }
