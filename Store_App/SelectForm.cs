@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Store_App
 {
@@ -21,6 +22,12 @@ namespace Store_App
         {
             Application.Exit();
 
+        }
+
+        private void SelectForm_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection();
+           // con.ConnectionString = 
         }
     }
 }
