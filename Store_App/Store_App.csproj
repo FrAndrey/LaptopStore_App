@@ -57,6 +57,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -68,12 +70,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DollarComputersModel.cs" />
     <Compile Include="IntroForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IntroForm.Designer.cs">
       <DependentUpon>IntroForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="product.cs" />
     <Compile Include="SelectForm.cs">
       <SubType>Form</SubType>
     </Compile>
