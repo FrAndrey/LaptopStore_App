@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
+            this.SelectFormTitleLabel = new System.Windows.Forms.Label();
             this.dataGridTable = new System.Windows.Forms.DataGridView();
             this.productIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -65,19 +65,23 @@
             this.productsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dollarComputersDataSet = new Store_App.DollarComputersDataSet();
             this.productsTableAdapter = new Store_App.DollarComputersDataSetTableAdapters.productsTableAdapter();
+            this.SelectFormSelectionLabel = new System.Windows.Forms.Label();
+            this.CurrentSelectionBox = new System.Windows.Forms.TextBox();
+            this.SelectFormNextButton = new System.Windows.Forms.Button();
+            this.SelectFormCancelButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // SelectFormTitleLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(147, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DollarComputer Hardware List";
+            this.SelectFormTitleLabel.AutoSize = true;
+            this.SelectFormTitleLabel.Location = new System.Drawing.Point(12, 20);
+            this.SelectFormTitleLabel.Name = "SelectFormTitleLabel";
+            this.SelectFormTitleLabel.Size = new System.Drawing.Size(147, 13);
+            this.SelectFormTitleLabel.TabIndex = 0;
+            this.SelectFormTitleLabel.Text = "DollarComputer Hardware List";
             // 
             // dataGridTable
             // 
@@ -392,16 +396,55 @@
             // 
             this.productsTableAdapter.ClearBeforeFill = true;
             // 
+            // SelectFormSelectionLabel
+            // 
+            this.SelectFormSelectionLabel.Location = new System.Drawing.Point(24, 379);
+            this.SelectFormSelectionLabel.Name = "SelectFormSelectionLabel";
+            this.SelectFormSelectionLabel.Size = new System.Drawing.Size(100, 23);
+            this.SelectFormSelectionLabel.TabIndex = 2;
+            this.SelectFormSelectionLabel.Text = "Your Selection: ";
+            // 
+            // CurrentSelectionBox
+            // 
+            this.CurrentSelectionBox.Location = new System.Drawing.Point(167, 376);
+            this.CurrentSelectionBox.Name = "CurrentSelectionBox";
+            this.CurrentSelectionBox.Size = new System.Drawing.Size(411, 20);
+            this.CurrentSelectionBox.TabIndex = 3;
+            // 
+            // SelectFormNextButton
+            // 
+            this.SelectFormNextButton.Location = new System.Drawing.Point(742, 378);
+            this.SelectFormNextButton.Name = "SelectFormNextButton";
+            this.SelectFormNextButton.Size = new System.Drawing.Size(75, 23);
+            this.SelectFormNextButton.TabIndex = 4;
+            this.SelectFormNextButton.Text = "Next";
+            this.SelectFormNextButton.UseVisualStyleBackColor = true;
+            this.SelectFormNextButton.Click += new System.EventHandler(this.SelectFormNextButton_Click);
+            // 
+            // SelectFormCancelButton
+            // 
+            this.SelectFormCancelButton.Location = new System.Drawing.Point(642, 378);
+            this.SelectFormCancelButton.Name = "SelectFormCancelButton";
+            this.SelectFormCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.SelectFormCancelButton.TabIndex = 5;
+            this.SelectFormCancelButton.Text = "Cancel";
+            this.SelectFormCancelButton.UseVisualStyleBackColor = true;
+            // 
             // SelectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(830, 414);
+            this.ControlBox = false;
+            this.Controls.Add(this.SelectFormCancelButton);
+            this.Controls.Add(this.SelectFormNextButton);
+            this.Controls.Add(this.CurrentSelectionBox);
+            this.Controls.Add(this.SelectFormSelectionLabel);
             this.Controls.Add(this.dataGridTable);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SelectFormTitleLabel);
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "s";
+            this.Text = "Select Your Computer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SelectForm_FormClosing);
             this.Load += new System.EventHandler(this.SelectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTable)).EndInit();
@@ -414,7 +457,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label SelectFormTitleLabel;
         private System.Windows.Forms.DataGridView dataGridTable;
         private DollarComputersDataSet dollarComputersDataSet;
         private System.Windows.Forms.BindingSource productsBindingSource;
@@ -450,6 +493,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn mousttypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn powerDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn webcamDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label SelectFormSelectionLabel;
+        private System.Windows.Forms.TextBox CurrentSelectionBox;
+        private System.Windows.Forms.Button SelectFormCancelButton;
+        public System.Windows.Forms.Button SelectFormNextButton;
     }
 }
 

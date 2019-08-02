@@ -16,5 +16,23 @@ namespace Store_App
         {
             InitializeComponent();
         }
+
+        private void OrderForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
+
+        private void OrderFormBackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.producInfoForm.Show();
+        }
+
+        private void OrderFormCancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

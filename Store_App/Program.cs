@@ -11,6 +11,8 @@ namespace Store_App
         public static IntroForm introForm { get; set; }
         public static StartForm startForm { get; set; }
         public static SelectForm selectForm { get; set; }
+        public static ProductInfoForm producInfoForm { get; set; }
+        public static OrderForm orderForm { get; set; }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -24,6 +26,8 @@ namespace Store_App
             introForm = new IntroForm();
             startForm = new StartForm();
             selectForm = new SelectForm();
+            producInfoForm = new ProductInfoForm();
+            orderForm = new OrderForm();
 
             Application.Run(introForm);
            

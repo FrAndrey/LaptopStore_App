@@ -33,5 +33,11 @@ namespace Store_App
             SqlConnection con = new SqlConnection();
            // con.ConnectionString = 
         }
+
+        private void SelectFormNextButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Program.producInfoForm.Show();
+        }
     }
 }
