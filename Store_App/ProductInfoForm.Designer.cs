@@ -72,6 +72,7 @@
             this.Controls.Add(this.ProductInfoBackButton);
             this.Controls.Add(this.ProductInfoCancelButton);
             this.Controls.Add(this.ProductInfoNextButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";

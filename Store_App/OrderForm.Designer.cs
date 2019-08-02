@@ -71,6 +71,7 @@
             this.Controls.Add(this.OrderFormBackButton);
             this.Controls.Add(this.OrderFormCancelButton);
             this.Controls.Add(this.OrderFormFinishButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
