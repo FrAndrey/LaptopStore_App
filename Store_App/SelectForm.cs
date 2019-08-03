@@ -58,22 +58,18 @@ namespace Store_App
             // rows[rowIndex].Selected = true; 
             CurrentSelectionBox.Text = " ";
 
-            for (int i = 0; i < columnCount; i++)
-            {
-                CurrentSelectionBox.Text += cells[i].Value.ToString() + " ";
-            } 
+            CurrentSelectionBox.Text = cells[2].Value.ToString() + " "+ cells[3].Value.ToString()
+               + "  Price: " + cells[1].Value.ToString() + "$";
 
-
-            var productList =
+           /* var productList =
                 from selectedProduct in dollarComputersDataSet.products
                 select selectedProduct;
-
+   
             foreach (var selectedProduct in productList.ToList())
-            {
-               Debug.Write("Product Id: " + selectedProduct.productID
-                    + ", Product: " + selectedProduct.manufacturer + " " + selectedProduct.model
-                    );
-            }
+            {       
+                  CurrentSelectionBox.Text += selectedProduct.cost +
+                     selectedProduct.manufacturer + selectedProduct.model;
+            }*/
         }
     }
 }

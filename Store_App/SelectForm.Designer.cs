@@ -412,6 +412,7 @@
             this.CurrentSelectionBox.ReadOnly = true;
             this.CurrentSelectionBox.Size = new System.Drawing.Size(411, 20);
             this.CurrentSelectionBox.TabIndex = 3;
+            this.CurrentSelectionBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SelectFormNextButton
             // 
