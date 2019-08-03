@@ -51,9 +51,16 @@ namespace Store_App
 
             foreach (var selectedProduct in productList.ToList())
             {
-                Debug.WriteLine("Student Id: " + selectedProduct.);
+                CurrentSelectionBox.Text = ("Product Id: " + selectedProduct.productID 
+                    + ", Product: " + selectedProduct.manufacturer + " " + selectedProduct.model
+                    );
             }
 
+        }
+
+        private void SelectFormCancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

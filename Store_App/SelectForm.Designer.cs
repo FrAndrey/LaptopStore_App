@@ -431,6 +431,7 @@
             this.SelectFormCancelButton.TabIndex = 5;
             this.SelectFormCancelButton.Text = "Cancel";
             this.SelectFormCancelButton.UseVisualStyleBackColor = true;
+            this.SelectFormCancelButton.Click += new System.EventHandler(this.SelectFormCancelButton_Click);
             // 
             // SelectForm
             // 
