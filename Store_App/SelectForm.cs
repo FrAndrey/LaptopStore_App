@@ -29,10 +29,7 @@ namespace Store_App
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
-            this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            SqlConnection con = new SqlConnection();
-           // con.ConnectionString = 
+
         }
 
         private void SelectFormNextButton_Click(object sender, EventArgs e)
@@ -54,21 +51,17 @@ namespace Store_App
 
         private void DataGridTable_SelectionChanged(object sender, EventArgs e)
         {
-            //  CurrentSelectionBox.Text = 
-
             var rowIndex = dataGridTable.CurrentCell.RowIndex;
             var rows = dataGridTable.Rows;
             var columnCount = dataGridTable.ColumnCount;
             var cells = rows[rowIndex].Cells;
+            // rows[rowIndex].Selected = true; 
+            CurrentSelectionBox.Text = " ";
 
-            rows[rowIndex].Selected = true;
-
-            CurrentSelectionBox.Text = string.Empty;
-
-         /*   for (int i = 0; i < columnCount; i++)
+            for (int i = 0; i < columnCount; i++)
             {
-                CurrentSelectionBox.Text = cells[i].Value.ToString();
-            } */
+                CurrentSelectionBox.Text += cells[i].Value.ToString() + " ";
+            } 
 
 
             var productList =
@@ -77,7 +70,7 @@ namespace Store_App
 
             foreach (var selectedProduct in productList.ToList())
             {
-               CurrentSelectionBox.Text = ("Product Id: " + selectedProduct.productID
+               Debug.Write("Product Id: " + selectedProduct.productID
                     + ", Product: " + selectedProduct.manufacturer + " " + selectedProduct.model
                     );
             }
