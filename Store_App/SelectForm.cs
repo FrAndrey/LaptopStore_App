@@ -41,9 +41,33 @@ namespace Store_App
             Program.producInfoForm.Show();
         }
 
-        private void DataGridTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             //  CurrentSelectionBox.Text = 
+
+            var rowIndex = dataGridTable.CurrentCell.RowIndex;
+            var rows = dataGridTable.Rows;
+            var columnCount = dataGridTable.ColumnCount;
+            var cells = rows[rowIndex].Cells;
+
+            rows[rowIndex].Selected = true;
+
+            for (int i = 0; i < columnCount; i++)
+            {
+                cells[i].Value.ToString();
+
+
+            }
+
+
+
+
+
+
+
+
+
+
 
             var productList =
                 from selectedProduct in dollarComputersDataSet.products
@@ -51,7 +75,7 @@ namespace Store_App
 
             foreach (var selectedProduct in productList.ToList())
             {
-                CurrentSelectionBox.Text = ("Product Id: " + selectedProduct.productID 
+                Debug.WriteLine("Product Id: " + selectedProduct.productID 
                     + ", Product: " + selectedProduct.manufacturer + " " + selectedProduct.model
                     );
             }
