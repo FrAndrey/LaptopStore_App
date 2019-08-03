@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Store_App
 {
@@ -38,6 +39,21 @@ namespace Store_App
         {
             this.Hide();
             Program.producInfoForm.Show();
+        }
+
+        private void DataGridTable_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //  CurrentSelectionBox.Text = 
+
+            var productList =
+                from selectedProduct in dollarComputersDataSet.products
+                select selectedProduct;
+
+            foreach (var selectedProduct in productList.ToList())
+            {
+                Debug.WriteLine("Student Id: " + selectedProduct.);
+            }
+
         }
     }
 }

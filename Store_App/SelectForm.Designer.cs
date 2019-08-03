@@ -133,6 +133,7 @@
             this.dataGridTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridTable.Size = new System.Drawing.Size(806, 316);
             this.dataGridTable.TabIndex = 1;
+            this.dataGridTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridTable_CellContentClick);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -408,6 +409,7 @@
             // 
             this.CurrentSelectionBox.Location = new System.Drawing.Point(167, 376);
             this.CurrentSelectionBox.Name = "CurrentSelectionBox";
+            this.CurrentSelectionBox.ReadOnly = true;
             this.CurrentSelectionBox.Size = new System.Drawing.Size(411, 20);
             this.CurrentSelectionBox.TabIndex = 3;
             // 
