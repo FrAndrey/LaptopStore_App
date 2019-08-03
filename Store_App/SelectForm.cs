@@ -43,6 +43,17 @@ namespace Store_App
 
         private void DataGridTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+          
+
+        }
+
+        private void SelectFormCancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void DataGridTable_SelectionChanged(object sender, EventArgs e)
+        {
             //  CurrentSelectionBox.Text = 
 
             var rowIndex = dataGridTable.CurrentCell.RowIndex;
@@ -52,21 +63,12 @@ namespace Store_App
 
             rows[rowIndex].Selected = true;
 
-            for (int i = 0; i < columnCount; i++)
+            CurrentSelectionBox.Text = string.Empty;
+
+         /*   for (int i = 0; i < columnCount; i++)
             {
-                cells[i].Value.ToString();
-
-
-            }
-
-
-
-
-
-
-
-
-
+                CurrentSelectionBox.Text = cells[i].Value.ToString();
+            } */
 
 
             var productList =
@@ -75,16 +77,10 @@ namespace Store_App
 
             foreach (var selectedProduct in productList.ToList())
             {
-                Debug.WriteLine("Product Id: " + selectedProduct.productID 
+               CurrentSelectionBox.Text = ("Product Id: " + selectedProduct.productID
                     + ", Product: " + selectedProduct.manufacturer + " " + selectedProduct.model
                     );
             }
-
-        }
-
-        private void SelectFormCancelButton_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

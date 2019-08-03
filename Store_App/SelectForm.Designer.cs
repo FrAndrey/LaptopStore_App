@@ -133,7 +133,7 @@
             this.dataGridTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridTable.Size = new System.Drawing.Size(806, 316);
             this.dataGridTable.TabIndex = 1;
-            this.dataGridTable.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridTable_CellClick);
+            this.dataGridTable.SelectionChanged += new System.EventHandler(this.DataGridTable_SelectionChanged);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
