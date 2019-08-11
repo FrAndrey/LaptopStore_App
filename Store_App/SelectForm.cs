@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;
+using System.IO;
 
 namespace Store_App
 {
@@ -122,6 +123,17 @@ namespace Store_App
                    CurrentSelectionBox.Text += selectedProduct.cost +
                       selectedProduct.manufacturer + selectedProduct.model;
              }*/
+        }
+
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StreamWriter outputString = new StreamWriter("Product.txt");
+
         }
     }
 }
