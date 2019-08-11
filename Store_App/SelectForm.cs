@@ -61,33 +61,43 @@ namespace Store_App
             CurrentSelectionBox.Text = cells[2].Value.ToString() + " "+ cells[3].Value.ToString()
                + "  Price: " + cells[1].Value.ToString() + "$";
 
+            // Program.product.productID = int.Parse( cells[1].Value.ToString() );
 
-
-
-           // Program.product.productID =int.Parse( cells[(int)Program.product.productID].Value.ToString();
-
-
-
-
-
-
-
+            Program.product.manufacturer = cells[2].Value.ToString();
+            Program.product.model = cells[3].Value.ToString();
+            Program.product.cost = decimal.Parse(cells[1].Value.ToString());
+            Program.product.manufacturer = cells[2].Value.ToString();
+            Program.product.manufacturer = cells[2].Value.ToString();
 
 
 
 
 
 
+            // Program.product.productID =int.Parse( cells[(int)Program.product.productID].Value.ToString();
 
-           /* var productList =
-                from selectedProduct in dollarComputersDataSet.products
-                select selectedProduct;
-   
-            foreach (var selectedProduct in productList.ToList())
-            {       
-                  CurrentSelectionBox.Text += selectedProduct.cost +
-                     selectedProduct.manufacturer + selectedProduct.model;
-            }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /* var productList =
+                 from selectedProduct in dollarComputersDataSet.products
+                 select selectedProduct;
+
+             foreach (var selectedProduct in productList.ToList())
+             {       
+                   CurrentSelectionBox.Text += selectedProduct.cost +
+                      selectedProduct.manufacturer + selectedProduct.model;
+             }*/
         }
     }
 }
