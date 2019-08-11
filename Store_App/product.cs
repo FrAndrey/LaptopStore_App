@@ -5,16 +5,7 @@ namespace Store_App
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-    enum productField
-    {
-        PRODUCTID,
-        COST
-       
-
-
-
-
-    }
+  
     public partial class product
     {
         public short productID { get; set; }
