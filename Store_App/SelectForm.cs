@@ -41,7 +41,7 @@ namespace Store_App
 
         private void DataGridTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-          
+
 
         }
 
@@ -59,7 +59,7 @@ namespace Store_App
             // rows[rowIndex].Selected = true; 
             CurrentSelectionBox.Text = " ";
 
-            CurrentSelectionBox.Text = cells[2].Value.ToString() + " "+ cells[3].Value.ToString()
+            CurrentSelectionBox.Text = cells[2].Value.ToString() + " " + cells[3].Value.ToString()
                + "  Price: " + cells[1].Value.ToString() + "$";
 
             // Program.product.productID = int.Parse( cells[1].Value.ToString() );
@@ -87,42 +87,6 @@ namespace Store_App
             Program.product.optical_drive = cells[20].Value.ToString();
             Program.product.Audio_type = cells[21].Value.ToString();
             Program.product.LAN = cells[22].Value.ToString();
-
-
-
-
-
-
-
-
-
-
-
-
-            // Program.product.productID =int.Parse( cells[(int)Program.product.productID].Value.ToString();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            /* var productList =
-                 from selectedProduct in dollarComputersDataSet.products
-                 select selectedProduct;
-
-             foreach (var selectedProduct in productList.ToList())
-             {       
-                   CurrentSelectionBox.Text += selectedProduct.cost +
-                      selectedProduct.manufacturer + selectedProduct.model;
-             }*/
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -134,6 +98,33 @@ namespace Store_App
         {
             StreamWriter outputString = new StreamWriter("Product.txt");
 
-        }
-    }
+            outputString.WriteLine(Program.product.productID);
+            outputString.WriteLine(Program.product.cost);
+            outputString.WriteLine(Program.product.manufacturer);
+            outputString.WriteLine(Program.product.model);
+            outputString.WriteLine(Program.product.RAM_type);
+            outputString.WriteLine(Program.product.RAM_size);
+            outputString.WriteLine(Program.product.displaytype);
+            outputString.WriteLine(Program.product.screensize);
+            outputString.WriteLine(Program.product.resolution);
+            outputString.WriteLine(Program.product.CPU_Class);
+            outputString.WriteLine(Program.product.CPU_brand);
+            outputString.WriteLine(Program.product.CPU_type);
+            outputString.WriteLine(Program.product.CPU_speed);
+            outputString.WriteLine(Program.product.CPU_number);
+            outputString.WriteLine(Program.product.condition);
+            outputString.WriteLine(Program.product.OS);
+            outputString.WriteLine(Program.product.platform);
+            outputString.WriteLine(Program.product.HDD_size);
+            outputString.WriteLine(Program.product.HDD_speed);
+            outputString.WriteLine(Program.product.GPU_Type);
+            outputString.WriteLine(Program.product.optical_drive);
+            outputString.WriteLine(Program.product.Audio_type);
+            outputString.WriteLine(Program.product.LAN);
+
+            outputString.Close();
+            outputString.Dispose();
+
+}
+}
 }
