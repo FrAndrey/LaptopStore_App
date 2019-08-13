@@ -76,6 +76,7 @@
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
+            this.Activated += new System.EventHandler(this.ProductInfoForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProductInfoForm_FormClosing);
             this.ResumeLayout(false);
 
