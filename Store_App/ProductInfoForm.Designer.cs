@@ -31,6 +31,8 @@
             this.ProductInfoNextButton = new System.Windows.Forms.Button();
             this.ProductInfoCancelButton = new System.Windows.Forms.Button();
             this.ProductInfoBackButton = new System.Windows.Forms.Button();
+            this.ProductIDLabel = new System.Windows.Forms.Label();
+            this.ProductIDDataLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ProductInfoNextButton
@@ -63,12 +65,33 @@
             this.ProductInfoBackButton.UseVisualStyleBackColor = true;
             this.ProductInfoBackButton.Click += new System.EventHandler(this.ProductInfoBackButton_Click);
             // 
+            // ProductIDLabel
+            // 
+            this.ProductIDLabel.Location = new System.Drawing.Point(45, 19);
+            this.ProductIDLabel.Name = "ProductIDLabel";
+            this.ProductIDLabel.Size = new System.Drawing.Size(123, 40);
+            this.ProductIDLabel.TabIndex = 1;
+            this.ProductIDLabel.Text = "Product ID";
+            this.ProductIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ProductIDDataLabel
+            // 
+            this.ProductIDDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ProductIDDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ProductIDDataLabel.Location = new System.Drawing.Point(154, 19);
+            this.ProductIDDataLabel.Name = "ProductIDDataLabel";
+            this.ProductIDDataLabel.Size = new System.Drawing.Size(123, 40);
+            this.ProductIDDataLabel.TabIndex = 1;
+            this.ProductIDDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 381);
             this.ControlBox = false;
+            this.Controls.Add(this.ProductIDDataLabel);
+            this.Controls.Add(this.ProductIDLabel);
             this.Controls.Add(this.ProductInfoBackButton);
             this.Controls.Add(this.ProductInfoCancelButton);
             this.Controls.Add(this.ProductInfoNextButton);
@@ -87,5 +110,7 @@
         private System.Windows.Forms.Button ProductInfoNextButton;
         private System.Windows.Forms.Button ProductInfoCancelButton;
         private System.Windows.Forms.Button ProductInfoBackButton;
+        private System.Windows.Forms.Label ProductIDLabel;
+        private System.Windows.Forms.Label ProductIDDataLabel;
     }
 }

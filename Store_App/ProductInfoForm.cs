@@ -72,6 +72,8 @@ namespace Store_App
                 inputStream.Close();
                 inputStream.Dispose();
             }
+
+            ProductIDDataLabel.Text = Program.product.productID.ToString();
         }
     }
 }
