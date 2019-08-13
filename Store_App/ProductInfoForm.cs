@@ -43,7 +43,7 @@ namespace Store_App
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
             using (StreamReader inputStream = new StreamReader(
-                 File.Open("Student.txt", FileMode.Open)))
+                 File.Open("Product.txt", FileMode.Open)))
             {
                 Program.product.productID = short.Parse(inputStream.ReadLine());
                 Program.product.cost = decimal.Parse(inputStream.ReadLine());
@@ -69,9 +69,8 @@ namespace Store_App
                 Program.product.Audio_type = inputStream.ReadLine();
                 Program.product.LAN = inputStream.ReadLine();
 
-
-
-
+                inputStream.Close();
+                inputStream.Dispose();
             }
         }
     }

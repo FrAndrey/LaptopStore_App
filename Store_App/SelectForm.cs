@@ -94,10 +94,10 @@ namespace Store_App
             Application.Exit();
         }
 
-        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveOutput(object sender, EventArgs e)
         {
-          using (  StreamWriter outputString = new StreamWriter(
-              File.Open("Product.txt",FileMode.Create)))
+            using (StreamWriter outputString = new StreamWriter(
+              File.Open("Product.txt", FileMode.Create)))
             {
                 outputString.WriteLine(Program.product.productID);
                 outputString.WriteLine(Program.product.cost);
@@ -127,6 +127,10 @@ namespace Store_App
                 outputString.Dispose();
             }
 
+
+        }
+        
+
 }
 }
-}
+
