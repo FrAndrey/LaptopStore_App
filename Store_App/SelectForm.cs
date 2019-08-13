@@ -36,6 +36,7 @@ namespace Store_App
         private void SelectFormNextButton_Click(object sender, EventArgs e)
         {
             this.Hide();
+            SaveOutput(sender, e);
             Program.producInfoForm.Show();
         }
 
