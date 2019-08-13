@@ -74,6 +74,9 @@ namespace Store_App
             }
 
             ProductIDDataLabel.Text = Program.product.productID.ToString();
+            ConditionDataLabel.Text = Program.product.condition.ToString();
+            CostDataLabel.Text = Program.product.cost.ToString();
+
         }
     }
 }

@@ -33,6 +33,12 @@
             this.ProductInfoBackButton = new System.Windows.Forms.Button();
             this.ProductIDLabel = new System.Windows.Forms.Label();
             this.ProductIDDataLabel = new System.Windows.Forms.Label();
+            this.ConditionLabel = new System.Windows.Forms.Label();
+            this.ConditionDataLabel = new System.Windows.Forms.Label();
+            this.CostLabel = new System.Windows.Forms.Label();
+            this.CostDataLabel = new System.Windows.Forms.Label();
+            this.ProductInfoUpperGroupBox = new System.Windows.Forms.GroupBox();
+            this.ProductInfoLowerGroupBox = new System.Windows.Forms.GroupBox();
             this.SuspendLayout();
             // 
             // ProductInfoNextButton
@@ -67,7 +73,7 @@
             // 
             // ProductIDLabel
             // 
-            this.ProductIDLabel.Location = new System.Drawing.Point(45, 19);
+            this.ProductIDLabel.Location = new System.Drawing.Point(25, 9);
             this.ProductIDLabel.Name = "ProductIDLabel";
             this.ProductIDLabel.Size = new System.Drawing.Size(123, 40);
             this.ProductIDLabel.TabIndex = 1;
@@ -78,11 +84,67 @@
             // 
             this.ProductIDDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ProductIDDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProductIDDataLabel.Location = new System.Drawing.Point(154, 19);
+            this.ProductIDDataLabel.Location = new System.Drawing.Point(134, 9);
             this.ProductIDDataLabel.Name = "ProductIDDataLabel";
             this.ProductIDDataLabel.Size = new System.Drawing.Size(123, 40);
             this.ProductIDDataLabel.TabIndex = 1;
             this.ProductIDDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ConditionLabel
+            // 
+            this.ConditionLabel.Location = new System.Drawing.Point(269, 9);
+            this.ConditionLabel.Name = "ConditionLabel";
+            this.ConditionLabel.Size = new System.Drawing.Size(123, 40);
+            this.ConditionLabel.TabIndex = 1;
+            this.ConditionLabel.Text = "Condition";
+            this.ConditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ConditionDataLabel
+            // 
+            this.ConditionDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ConditionDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ConditionDataLabel.Location = new System.Drawing.Point(378, 9);
+            this.ConditionDataLabel.Name = "ConditionDataLabel";
+            this.ConditionDataLabel.Size = new System.Drawing.Size(123, 40);
+            this.ConditionDataLabel.TabIndex = 1;
+            this.ConditionDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CostLabel
+            // 
+            this.CostLabel.Location = new System.Drawing.Point(523, 9);
+            this.CostLabel.Name = "CostLabel";
+            this.CostLabel.Size = new System.Drawing.Size(123, 40);
+            this.CostLabel.TabIndex = 1;
+            this.CostLabel.Text = "Cost";
+            this.CostLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CostDataLabel
+            // 
+            this.CostDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CostDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CostDataLabel.Location = new System.Drawing.Point(632, 9);
+            this.CostDataLabel.Name = "CostDataLabel";
+            this.CostDataLabel.Size = new System.Drawing.Size(123, 40);
+            this.CostDataLabel.TabIndex = 1;
+            this.CostDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ProductInfoUpperGroupBox
+            // 
+            this.ProductInfoUpperGroupBox.Location = new System.Drawing.Point(28, 52);
+            this.ProductInfoUpperGroupBox.Name = "ProductInfoUpperGroupBox";
+            this.ProductInfoUpperGroupBox.Size = new System.Drawing.Size(747, 117);
+            this.ProductInfoUpperGroupBox.TabIndex = 2;
+            this.ProductInfoUpperGroupBox.TabStop = false;
+            this.ProductInfoUpperGroupBox.Text = "Product Info";
+            // 
+            // ProductInfoLowerGroupBox
+            // 
+            this.ProductInfoLowerGroupBox.Location = new System.Drawing.Point(28, 215);
+            this.ProductInfoLowerGroupBox.Name = "ProductInfoLowerGroupBox";
+            this.ProductInfoLowerGroupBox.Size = new System.Drawing.Size(747, 111);
+            this.ProductInfoLowerGroupBox.TabIndex = 2;
+            this.ProductInfoLowerGroupBox.TabStop = false;
+            this.ProductInfoLowerGroupBox.Text = "Product Info";
             // 
             // ProductInfoForm
             // 
@@ -90,6 +152,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(804, 381);
             this.ControlBox = false;
+            this.Controls.Add(this.ProductInfoLowerGroupBox);
+            this.Controls.Add(this.ProductInfoUpperGroupBox);
+            this.Controls.Add(this.CostDataLabel);
+            this.Controls.Add(this.CostLabel);
+            this.Controls.Add(this.ConditionDataLabel);
+            this.Controls.Add(this.ConditionLabel);
             this.Controls.Add(this.ProductIDDataLabel);
             this.Controls.Add(this.ProductIDLabel);
             this.Controls.Add(this.ProductInfoBackButton);
@@ -112,5 +180,11 @@
         private System.Windows.Forms.Button ProductInfoBackButton;
         private System.Windows.Forms.Label ProductIDLabel;
         private System.Windows.Forms.Label ProductIDDataLabel;
+        private System.Windows.Forms.Label ConditionLabel;
+        private System.Windows.Forms.Label ConditionDataLabel;
+        private System.Windows.Forms.Label CostLabel;
+        private System.Windows.Forms.Label CostDataLabel;
+        private System.Windows.Forms.GroupBox ProductInfoUpperGroupBox;
+        private System.Windows.Forms.GroupBox ProductInfoLowerGroupBox;
     }
 }
