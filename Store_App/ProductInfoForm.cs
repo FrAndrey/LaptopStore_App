@@ -76,10 +76,22 @@ namespace Store_App
             ProductIDDataLabel.Text = Program.product.productID.ToString();
             ConditionDataLabel.Text = Program.product.condition.ToString();
             CostDataLabel.Text = Program.product.cost.ToString();
+
             PlatformDataLabel.Text = Program.product.platform.ToString();
             OsDataLabel.Text = Program.product.OS.ToString();
             ModelDataLabel.Text = Program.product.model.ToString();
             ManufacturerDataLabel.Text = Program.product.manufacturer.ToString();
+
+            MemoryDataLabel.Text = Program.product.RAM_size.ToString();
+            CpuBrandDataLabel.Text = Program.product.CPU_brand.ToString();
+            CpuTypeDataLabel.Text = Program.product.CPU_type.ToString();
+            LcdSizeDataLabel.Text = Program.product.displaytype.ToString();
+            CpuNumberDataLabel.Text = Program.product.CPU_number.ToString();
+            CpuSpeedDataLabel.Text = Program.product.CPU_speed.ToString();
+            HddDataLabel.Text = Program.product.HDD_size.ToString();
+            GpuTypeDataLabel.Text = Program.product.GPU_Type.ToString();
+            //WebcamDataLabel.Text = Program.product.webcam.ToString();
+
 
         }
     }
