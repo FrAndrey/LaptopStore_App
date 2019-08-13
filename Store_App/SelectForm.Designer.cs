@@ -83,19 +83,24 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.openToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.saveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.helpToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).BeginInit();
             this.MainMenuStrip.SuspendLayout();
+            this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // SelectFormTitleLabel
             // 
             this.SelectFormTitleLabel.AutoSize = true;
-            this.SelectFormTitleLabel.Location = new System.Drawing.Point(15, 57);
-            this.SelectFormTitleLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.SelectFormTitleLabel.Location = new System.Drawing.Point(-3, 47);
             this.SelectFormTitleLabel.Name = "SelectFormTitleLabel";
-            this.SelectFormTitleLabel.Size = new System.Drawing.Size(299, 25);
+            this.SelectFormTitleLabel.Size = new System.Drawing.Size(147, 13);
             this.SelectFormTitleLabel.TabIndex = 0;
             this.SelectFormTitleLabel.Text = "DollarComputer Hardware List";
             // 
@@ -142,13 +147,12 @@
             this.powerDataGridViewTextBoxColumn,
             this.webcamDataGridViewTextBoxColumn});
             this.dataGridTable.DataSource = this.productsBindingSource;
-            this.dataGridTable.Location = new System.Drawing.Point(33, 103);
-            this.dataGridTable.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.dataGridTable.Location = new System.Drawing.Point(0, 63);
             this.dataGridTable.MultiSelect = false;
             this.dataGridTable.Name = "dataGridTable";
             this.dataGridTable.ReadOnly = true;
             this.dataGridTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridTable.Size = new System.Drawing.Size(1612, 608);
+            this.dataGridTable.Size = new System.Drawing.Size(817, 316);
             this.dataGridTable.TabIndex = 1;
             this.dataGridTable.SelectionChanged += new System.EventHandler(this.DataGridTable_SelectionChanged);
             // 
@@ -158,7 +162,7 @@
             this.productIDDataGridViewTextBoxColumn.HeaderText = "productID";
             this.productIDDataGridViewTextBoxColumn.Name = "productIDDataGridViewTextBoxColumn";
             this.productIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.productIDDataGridViewTextBoxColumn.Width = 149;
+            this.productIDDataGridViewTextBoxColumn.Width = 79;
             // 
             // costDataGridViewTextBoxColumn
             // 
@@ -166,7 +170,7 @@
             this.costDataGridViewTextBoxColumn.HeaderText = "cost";
             this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
             this.costDataGridViewTextBoxColumn.ReadOnly = true;
-            this.costDataGridViewTextBoxColumn.Width = 97;
+            this.costDataGridViewTextBoxColumn.Width = 52;
             // 
             // manufacturerDataGridViewTextBoxColumn
             // 
@@ -174,7 +178,7 @@
             this.manufacturerDataGridViewTextBoxColumn.HeaderText = "manufacturer";
             this.manufacturerDataGridViewTextBoxColumn.Name = "manufacturerDataGridViewTextBoxColumn";
             this.manufacturerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.manufacturerDataGridViewTextBoxColumn.Width = 183;
+            this.manufacturerDataGridViewTextBoxColumn.Width = 94;
             // 
             // modelDataGridViewTextBoxColumn
             // 
@@ -182,7 +186,7 @@
             this.modelDataGridViewTextBoxColumn.HeaderText = "model";
             this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
             this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            this.modelDataGridViewTextBoxColumn.Width = 115;
+            this.modelDataGridViewTextBoxColumn.Width = 60;
             // 
             // rAMtypeDataGridViewTextBoxColumn
             // 
@@ -190,7 +194,7 @@
             this.rAMtypeDataGridViewTextBoxColumn.HeaderText = "RAM_type";
             this.rAMtypeDataGridViewTextBoxColumn.Name = "rAMtypeDataGridViewTextBoxColumn";
             this.rAMtypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rAMtypeDataGridViewTextBoxColumn.Width = 157;
+            this.rAMtypeDataGridViewTextBoxColumn.Width = 82;
             // 
             // rAMsizeDataGridViewTextBoxColumn
             // 
@@ -198,7 +202,7 @@
             this.rAMsizeDataGridViewTextBoxColumn.HeaderText = "RAM_size";
             this.rAMsizeDataGridViewTextBoxColumn.Name = "rAMsizeDataGridViewTextBoxColumn";
             this.rAMsizeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.rAMsizeDataGridViewTextBoxColumn.Width = 155;
+            this.rAMsizeDataGridViewTextBoxColumn.Width = 80;
             // 
             // displaytypeDataGridViewTextBoxColumn
             // 
@@ -206,7 +210,7 @@
             this.displaytypeDataGridViewTextBoxColumn.HeaderText = "displaytype";
             this.displaytypeDataGridViewTextBoxColumn.Name = "displaytypeDataGridViewTextBoxColumn";
             this.displaytypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.displaytypeDataGridViewTextBoxColumn.Width = 166;
+            this.displaytypeDataGridViewTextBoxColumn.Width = 84;
             // 
             // screensizeDataGridViewTextBoxColumn
             // 
@@ -214,7 +218,7 @@
             this.screensizeDataGridViewTextBoxColumn.HeaderText = "screensize";
             this.screensizeDataGridViewTextBoxColumn.Name = "screensizeDataGridViewTextBoxColumn";
             this.screensizeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.screensizeDataGridViewTextBoxColumn.Width = 161;
+            this.screensizeDataGridViewTextBoxColumn.Width = 82;
             // 
             // resolutionDataGridViewTextBoxColumn
             // 
@@ -222,7 +226,7 @@
             this.resolutionDataGridViewTextBoxColumn.HeaderText = "resolution";
             this.resolutionDataGridViewTextBoxColumn.Name = "resolutionDataGridViewTextBoxColumn";
             this.resolutionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.resolutionDataGridViewTextBoxColumn.Width = 151;
+            this.resolutionDataGridViewTextBoxColumn.Width = 77;
             // 
             // cPUClassDataGridViewTextBoxColumn
             // 
@@ -230,7 +234,7 @@
             this.cPUClassDataGridViewTextBoxColumn.HeaderText = "CPU_Class";
             this.cPUClassDataGridViewTextBoxColumn.Name = "cPUClassDataGridViewTextBoxColumn";
             this.cPUClassDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cPUClassDataGridViewTextBoxColumn.Width = 167;
+            this.cPUClassDataGridViewTextBoxColumn.Width = 85;
             // 
             // cPUbrandDataGridViewTextBoxColumn
             // 
@@ -238,7 +242,7 @@
             this.cPUbrandDataGridViewTextBoxColumn.HeaderText = "CPU_brand";
             this.cPUbrandDataGridViewTextBoxColumn.Name = "cPUbrandDataGridViewTextBoxColumn";
             this.cPUbrandDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cPUbrandDataGridViewTextBoxColumn.Width = 168;
+            this.cPUbrandDataGridViewTextBoxColumn.Width = 87;
             // 
             // cPUtypeDataGridViewTextBoxColumn
             // 
@@ -246,7 +250,7 @@
             this.cPUtypeDataGridViewTextBoxColumn.HeaderText = "CPU_type";
             this.cPUtypeDataGridViewTextBoxColumn.Name = "cPUtypeDataGridViewTextBoxColumn";
             this.cPUtypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cPUtypeDataGridViewTextBoxColumn.Width = 154;
+            this.cPUtypeDataGridViewTextBoxColumn.Width = 80;
             // 
             // cPUspeedDataGridViewTextBoxColumn
             // 
@@ -254,7 +258,7 @@
             this.cPUspeedDataGridViewTextBoxColumn.HeaderText = "CPU_speed";
             this.cPUspeedDataGridViewTextBoxColumn.Name = "cPUspeedDataGridViewTextBoxColumn";
             this.cPUspeedDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cPUspeedDataGridViewTextBoxColumn.Width = 172;
+            this.cPUspeedDataGridViewTextBoxColumn.Width = 89;
             // 
             // cPUnumberDataGridViewTextBoxColumn
             // 
@@ -262,7 +266,7 @@
             this.cPUnumberDataGridViewTextBoxColumn.HeaderText = "CPU_number";
             this.cPUnumberDataGridViewTextBoxColumn.Name = "cPUnumberDataGridViewTextBoxColumn";
             this.cPUnumberDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cPUnumberDataGridViewTextBoxColumn.Width = 185;
+            this.cPUnumberDataGridViewTextBoxColumn.Width = 95;
             // 
             // conditionDataGridViewTextBoxColumn
             // 
@@ -270,7 +274,7 @@
             this.conditionDataGridViewTextBoxColumn.HeaderText = "condition";
             this.conditionDataGridViewTextBoxColumn.Name = "conditionDataGridViewTextBoxColumn";
             this.conditionDataGridViewTextBoxColumn.ReadOnly = true;
-            this.conditionDataGridViewTextBoxColumn.Width = 144;
+            this.conditionDataGridViewTextBoxColumn.Width = 75;
             // 
             // oSDataGridViewTextBoxColumn
             // 
@@ -278,7 +282,7 @@
             this.oSDataGridViewTextBoxColumn.HeaderText = "OS";
             this.oSDataGridViewTextBoxColumn.Name = "oSDataGridViewTextBoxColumn";
             this.oSDataGridViewTextBoxColumn.ReadOnly = true;
-            this.oSDataGridViewTextBoxColumn.Width = 87;
+            this.oSDataGridViewTextBoxColumn.Width = 47;
             // 
             // platformDataGridViewTextBoxColumn
             // 
@@ -286,7 +290,7 @@
             this.platformDataGridViewTextBoxColumn.HeaderText = "platform";
             this.platformDataGridViewTextBoxColumn.Name = "platformDataGridViewTextBoxColumn";
             this.platformDataGridViewTextBoxColumn.ReadOnly = true;
-            this.platformDataGridViewTextBoxColumn.Width = 134;
+            this.platformDataGridViewTextBoxColumn.Width = 69;
             // 
             // hDDsizeDataGridViewTextBoxColumn
             // 
@@ -294,7 +298,7 @@
             this.hDDsizeDataGridViewTextBoxColumn.HeaderText = "HDD_size";
             this.hDDsizeDataGridViewTextBoxColumn.Name = "hDDsizeDataGridViewTextBoxColumn";
             this.hDDsizeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.hDDsizeDataGridViewTextBoxColumn.Width = 153;
+            this.hDDsizeDataGridViewTextBoxColumn.Width = 80;
             // 
             // hDDspeedDataGridViewTextBoxColumn
             // 
@@ -302,7 +306,7 @@
             this.hDDspeedDataGridViewTextBoxColumn.HeaderText = "HDD_speed";
             this.hDDspeedDataGridViewTextBoxColumn.Name = "hDDspeedDataGridViewTextBoxColumn";
             this.hDDspeedDataGridViewTextBoxColumn.ReadOnly = true;
-            this.hDDspeedDataGridViewTextBoxColumn.Width = 173;
+            this.hDDspeedDataGridViewTextBoxColumn.Width = 91;
             // 
             // gPUTypeDataGridViewTextBoxColumn
             // 
@@ -310,7 +314,7 @@
             this.gPUTypeDataGridViewTextBoxColumn.HeaderText = "GPU_Type";
             this.gPUTypeDataGridViewTextBoxColumn.Name = "gPUTypeDataGridViewTextBoxColumn";
             this.gPUTypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.gPUTypeDataGridViewTextBoxColumn.Width = 162;
+            this.gPUTypeDataGridViewTextBoxColumn.Width = 85;
             // 
             // opticaldriveDataGridViewTextBoxColumn
             // 
@@ -318,7 +322,7 @@
             this.opticaldriveDataGridViewTextBoxColumn.HeaderText = "optical_drive";
             this.opticaldriveDataGridViewTextBoxColumn.Name = "opticaldriveDataGridViewTextBoxColumn";
             this.opticaldriveDataGridViewTextBoxColumn.ReadOnly = true;
-            this.opticaldriveDataGridViewTextBoxColumn.Width = 179;
+            this.opticaldriveDataGridViewTextBoxColumn.Width = 92;
             // 
             // audiotypeDataGridViewTextBoxColumn
             // 
@@ -326,7 +330,7 @@
             this.audiotypeDataGridViewTextBoxColumn.HeaderText = "Audio_type";
             this.audiotypeDataGridViewTextBoxColumn.Name = "audiotypeDataGridViewTextBoxColumn";
             this.audiotypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.audiotypeDataGridViewTextBoxColumn.Width = 165;
+            this.audiotypeDataGridViewTextBoxColumn.Width = 85;
             // 
             // lANDataGridViewTextBoxColumn
             // 
@@ -334,7 +338,7 @@
             this.lANDataGridViewTextBoxColumn.HeaderText = "LAN";
             this.lANDataGridViewTextBoxColumn.Name = "lANDataGridViewTextBoxColumn";
             this.lANDataGridViewTextBoxColumn.ReadOnly = true;
-            this.lANDataGridViewTextBoxColumn.Width = 98;
+            this.lANDataGridViewTextBoxColumn.Width = 53;
             // 
             // wIFIDataGridViewTextBoxColumn
             // 
@@ -342,6 +346,7 @@
             this.wIFIDataGridViewTextBoxColumn.HeaderText = "WIFI";
             this.wIFIDataGridViewTextBoxColumn.Name = "wIFIDataGridViewTextBoxColumn";
             this.wIFIDataGridViewTextBoxColumn.ReadOnly = true;
+            this.wIFIDataGridViewTextBoxColumn.Width = 55;
             // 
             // widthDataGridViewTextBoxColumn
             // 
@@ -349,7 +354,7 @@
             this.widthDataGridViewTextBoxColumn.HeaderText = "width";
             this.widthDataGridViewTextBoxColumn.Name = "widthDataGridViewTextBoxColumn";
             this.widthDataGridViewTextBoxColumn.ReadOnly = true;
-            this.widthDataGridViewTextBoxColumn.Width = 107;
+            this.widthDataGridViewTextBoxColumn.Width = 57;
             // 
             // heightDataGridViewTextBoxColumn
             // 
@@ -357,7 +362,7 @@
             this.heightDataGridViewTextBoxColumn.HeaderText = "height";
             this.heightDataGridViewTextBoxColumn.Name = "heightDataGridViewTextBoxColumn";
             this.heightDataGridViewTextBoxColumn.ReadOnly = true;
-            this.heightDataGridViewTextBoxColumn.Width = 116;
+            this.heightDataGridViewTextBoxColumn.Width = 61;
             // 
             // depthDataGridViewTextBoxColumn
             // 
@@ -365,7 +370,7 @@
             this.depthDataGridViewTextBoxColumn.HeaderText = "depth";
             this.depthDataGridViewTextBoxColumn.Name = "depthDataGridViewTextBoxColumn";
             this.depthDataGridViewTextBoxColumn.ReadOnly = true;
-            this.depthDataGridViewTextBoxColumn.Width = 111;
+            this.depthDataGridViewTextBoxColumn.Width = 59;
             // 
             // weightDataGridViewTextBoxColumn
             // 
@@ -373,7 +378,7 @@
             this.weightDataGridViewTextBoxColumn.HeaderText = "weight";
             this.weightDataGridViewTextBoxColumn.Name = "weightDataGridViewTextBoxColumn";
             this.weightDataGridViewTextBoxColumn.ReadOnly = true;
-            this.weightDataGridViewTextBoxColumn.Width = 119;
+            this.weightDataGridViewTextBoxColumn.Width = 63;
             // 
             // mousttypeDataGridViewTextBoxColumn
             // 
@@ -381,7 +386,7 @@
             this.mousttypeDataGridViewTextBoxColumn.HeaderText = "moust_type";
             this.mousttypeDataGridViewTextBoxColumn.Name = "mousttypeDataGridViewTextBoxColumn";
             this.mousttypeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.mousttypeDataGridViewTextBoxColumn.Width = 168;
+            this.mousttypeDataGridViewTextBoxColumn.Width = 86;
             // 
             // powerDataGridViewTextBoxColumn
             // 
@@ -389,7 +394,7 @@
             this.powerDataGridViewTextBoxColumn.HeaderText = "power";
             this.powerDataGridViewTextBoxColumn.Name = "powerDataGridViewTextBoxColumn";
             this.powerDataGridViewTextBoxColumn.ReadOnly = true;
-            this.powerDataGridViewTextBoxColumn.Width = 115;
+            this.powerDataGridViewTextBoxColumn.Width = 61;
             // 
             // webcamDataGridViewTextBoxColumn
             // 
@@ -397,7 +402,7 @@
             this.webcamDataGridViewTextBoxColumn.HeaderText = "webcam";
             this.webcamDataGridViewTextBoxColumn.Name = "webcamDataGridViewTextBoxColumn";
             this.webcamDataGridViewTextBoxColumn.ReadOnly = true;
-            this.webcamDataGridViewTextBoxColumn.Width = 136;
+            this.webcamDataGridViewTextBoxColumn.Width = 72;
             // 
             // productsBindingSource
             // 
@@ -415,29 +420,26 @@
             // 
             // SelectFormSelectionLabel
             // 
-            this.SelectFormSelectionLabel.Location = new System.Drawing.Point(48, 729);
-            this.SelectFormSelectionLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.SelectFormSelectionLabel.Location = new System.Drawing.Point(44, 398);
             this.SelectFormSelectionLabel.Name = "SelectFormSelectionLabel";
-            this.SelectFormSelectionLabel.Size = new System.Drawing.Size(200, 44);
+            this.SelectFormSelectionLabel.Size = new System.Drawing.Size(100, 23);
             this.SelectFormSelectionLabel.TabIndex = 2;
             this.SelectFormSelectionLabel.Text = "Your Selection: ";
             // 
             // CurrentSelectionBox
             // 
-            this.CurrentSelectionBox.Location = new System.Drawing.Point(334, 723);
-            this.CurrentSelectionBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.CurrentSelectionBox.Location = new System.Drawing.Point(150, 395);
             this.CurrentSelectionBox.Name = "CurrentSelectionBox";
             this.CurrentSelectionBox.ReadOnly = true;
-            this.CurrentSelectionBox.Size = new System.Drawing.Size(818, 31);
+            this.CurrentSelectionBox.Size = new System.Drawing.Size(411, 20);
             this.CurrentSelectionBox.TabIndex = 3;
             this.CurrentSelectionBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // SelectFormNextButton
             // 
-            this.SelectFormNextButton.Location = new System.Drawing.Point(1484, 727);
-            this.SelectFormNextButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SelectFormNextButton.Location = new System.Drawing.Point(747, 395);
             this.SelectFormNextButton.Name = "SelectFormNextButton";
-            this.SelectFormNextButton.Size = new System.Drawing.Size(150, 44);
+            this.SelectFormNextButton.Size = new System.Drawing.Size(75, 23);
             this.SelectFormNextButton.TabIndex = 4;
             this.SelectFormNextButton.Text = "Next";
             this.SelectFormNextButton.UseVisualStyleBackColor = true;
@@ -445,10 +447,9 @@
             // 
             // SelectFormCancelButton
             // 
-            this.SelectFormCancelButton.Location = new System.Drawing.Point(1284, 727);
-            this.SelectFormCancelButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.SelectFormCancelButton.Location = new System.Drawing.Point(630, 395);
             this.SelectFormCancelButton.Name = "SelectFormCancelButton";
-            this.SelectFormCancelButton.Size = new System.Drawing.Size(150, 44);
+            this.SelectFormCancelButton.Size = new System.Drawing.Size(75, 23);
             this.SelectFormCancelButton.TabIndex = 5;
             this.SelectFormCancelButton.Text = "Cancel";
             this.SelectFormCancelButton.UseVisualStyleBackColor = true;
@@ -466,7 +467,7 @@
             this.toolStripSeparator2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(64, 38);
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 22);
             this.fileToolStripMenuItem1.Text = "&File";
             // 
             // openToolStripMenuItem
@@ -475,13 +476,13 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(321, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -489,20 +490,20 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // saveAsToolStripMenuItem
             // 
             this.saveAsToolStripMenuItem.Name = "saveAsToolStripMenuItem";
-            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.saveAsToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveAsToolStripMenuItem.Text = "Save &As";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(321, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -510,18 +511,18 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.printToolStripMenuItem.Text = "&Print";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(321, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(324, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
@@ -531,18 +532,18 @@
             this.toolStripSeparator5,
             this.aboutToolStripMenuItem1});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(77, 36);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 22);
             this.helpToolStripMenuItem.Text = "&Help";
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(321, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(113, 6);
             // 
             // aboutToolStripMenuItem1
             // 
             this.aboutToolStripMenuItem1.Name = "aboutToolStripMenuItem1";
-            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(324, 38);
+            this.aboutToolStripMenuItem1.Size = new System.Drawing.Size(116, 22);
             this.aboutToolStripMenuItem1.Text = "&About...";
             // 
             // MainMenuStrip
@@ -553,16 +554,64 @@
             this.helpToolStripMenuItem});
             this.MainMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainMenuStrip.Name = "MainMenuStrip";
-            this.MainMenuStrip.Size = new System.Drawing.Size(1660, 42);
+            this.MainMenuStrip.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.MainMenuStrip.Size = new System.Drawing.Size(834, 24);
             this.MainMenuStrip.TabIndex = 6;
             this.MainMenuStrip.Text = "menuStrip1";
             // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripButton,
+            this.saveToolStripButton,
+            this.toolStripSeparator3,
+            this.helpToolStripButton});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 24);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(834, 25);
+            this.toolStrip1.TabIndex = 7;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // openToolStripButton
+            // 
+            this.openToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.openToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripButton.Image")));
+            this.openToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripButton.Name = "openToolStripButton";
+            this.openToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.openToolStripButton.Text = "&Open";
+            // 
+            // saveToolStripButton
+            // 
+            this.saveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.saveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripButton.Image")));
+            this.saveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripButton.Name = "saveToolStripButton";
+            this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.saveToolStripButton.Text = "&Save";
+            this.saveToolStripButton.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // helpToolStripButton
+            // 
+            this.helpToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.helpToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("helpToolStripButton.Image")));
+            this.helpToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.helpToolStripButton.Name = "helpToolStripButton";
+            this.helpToolStripButton.Size = new System.Drawing.Size(23, 22);
+            this.helpToolStripButton.Text = "He&lp";
+            // 
             // SelectForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1660, 796);
+            this.ClientSize = new System.Drawing.Size(834, 430);
             this.ControlBox = false;
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.SelectFormCancelButton);
             this.Controls.Add(this.SelectFormNextButton);
             this.Controls.Add(this.CurrentSelectionBox);
@@ -571,8 +620,6 @@
             this.Controls.Add(this.SelectFormTitleLabel);
             this.Controls.Add(this.MainMenuStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MainMenuStrip = this.MainMenuStrip;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "SelectForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Select Your Computer";
@@ -583,6 +630,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dollarComputersDataSet)).EndInit();
             this.MainMenuStrip.ResumeLayout(false);
             this.MainMenuStrip.PerformLayout();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -643,6 +692,11 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem1;
         private System.Windows.Forms.MenuStrip MainMenuStrip;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton openToolStripButton;
+        private System.Windows.Forms.ToolStripButton saveToolStripButton;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripButton helpToolStripButton;
     }
 }
 

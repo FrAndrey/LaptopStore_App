@@ -96,34 +96,36 @@ namespace Store_App
 
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StreamWriter outputString = new StreamWriter("Product.txt");
+          using (  StreamWriter outputString = new StreamWriter(
+              File.Open("Product.txt",FileMode.Create)))
+            {
+                outputString.WriteLine(Program.product.productID);
+                outputString.WriteLine(Program.product.cost);
+                outputString.WriteLine(Program.product.manufacturer);
+                outputString.WriteLine(Program.product.model);
+                outputString.WriteLine(Program.product.RAM_type);
+                outputString.WriteLine(Program.product.RAM_size);
+                outputString.WriteLine(Program.product.displaytype);
+                outputString.WriteLine(Program.product.screensize);
+                outputString.WriteLine(Program.product.resolution);
+                outputString.WriteLine(Program.product.CPU_Class);
+                outputString.WriteLine(Program.product.CPU_brand);
+                outputString.WriteLine(Program.product.CPU_type);
+                outputString.WriteLine(Program.product.CPU_speed);
+                outputString.WriteLine(Program.product.CPU_number);
+                outputString.WriteLine(Program.product.condition);
+                outputString.WriteLine(Program.product.OS);
+                outputString.WriteLine(Program.product.platform);
+                outputString.WriteLine(Program.product.HDD_size);
+                outputString.WriteLine(Program.product.HDD_speed);
+                outputString.WriteLine(Program.product.GPU_Type);
+                outputString.WriteLine(Program.product.optical_drive);
+                outputString.WriteLine(Program.product.Audio_type);
+                outputString.WriteLine(Program.product.LAN);
 
-            outputString.WriteLine(Program.product.productID);
-            outputString.WriteLine(Program.product.cost);
-            outputString.WriteLine(Program.product.manufacturer);
-            outputString.WriteLine(Program.product.model);
-            outputString.WriteLine(Program.product.RAM_type);
-            outputString.WriteLine(Program.product.RAM_size);
-            outputString.WriteLine(Program.product.displaytype);
-            outputString.WriteLine(Program.product.screensize);
-            outputString.WriteLine(Program.product.resolution);
-            outputString.WriteLine(Program.product.CPU_Class);
-            outputString.WriteLine(Program.product.CPU_brand);
-            outputString.WriteLine(Program.product.CPU_type);
-            outputString.WriteLine(Program.product.CPU_speed);
-            outputString.WriteLine(Program.product.CPU_number);
-            outputString.WriteLine(Program.product.condition);
-            outputString.WriteLine(Program.product.OS);
-            outputString.WriteLine(Program.product.platform);
-            outputString.WriteLine(Program.product.HDD_size);
-            outputString.WriteLine(Program.product.HDD_speed);
-            outputString.WriteLine(Program.product.GPU_Type);
-            outputString.WriteLine(Program.product.optical_drive);
-            outputString.WriteLine(Program.product.Audio_type);
-            outputString.WriteLine(Program.product.LAN);
-
-            outputString.Close();
-            outputString.Dispose();
+                outputString.Close();
+                outputString.Dispose();
+            }
 
 }
 }
