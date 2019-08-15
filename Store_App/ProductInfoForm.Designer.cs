@@ -38,33 +38,33 @@
             this.CostLabel = new System.Windows.Forms.Label();
             this.CostDataLabel = new System.Windows.Forms.Label();
             this.ProductInfoUpperGroupBox = new System.Windows.Forms.GroupBox();
-            this.ProductInfoLowerGroupBox = new System.Windows.Forms.GroupBox();
-            this.PlatformLabel = new System.Windows.Forms.Label();
-            this.PlatformDataLabel = new System.Windows.Forms.Label();
-            this.ManufacturerLabel = new System.Windows.Forms.Label();
-            this.ManufacturerDataLabel = new System.Windows.Forms.Label();
-            this.OsLabel = new System.Windows.Forms.Label();
-            this.OsDataLabel = new System.Windows.Forms.Label();
-            this.ModelLabel = new System.Windows.Forms.Label();
             this.ModelDataLabel = new System.Windows.Forms.Label();
-            this.MemoryLabel = new System.Windows.Forms.Label();
-            this.MemoryDataLabel = new System.Windows.Forms.Label();
-            this.CpuBrandLabel = new System.Windows.Forms.Label();
-            this.CpuBrandDataLabel = new System.Windows.Forms.Label();
-            this.CpuTypeDataLabel = new System.Windows.Forms.Label();
-            this.CpuTypeLabel = new System.Windows.Forms.Label();
-            this.CpuNumberDataLabel = new System.Windows.Forms.Label();
-            this.CpuSpeedDataLabel = new System.Windows.Forms.Label();
-            this.CpuNumberLabel = new System.Windows.Forms.Label();
-            this.CpuSpeedLabel = new System.Windows.Forms.Label();
-            this.LcdSizeLabel = new System.Windows.Forms.Label();
-            this.LcdSizeDataLabel = new System.Windows.Forms.Label();
-            this.GpuTypeDataLabel = new System.Windows.Forms.Label();
-            this.WebcamDataLabel = new System.Windows.Forms.Label();
-            this.GpuTypeLabel = new System.Windows.Forms.Label();
-            this.WebcamLabel = new System.Windows.Forms.Label();
-            this.HddLabel = new System.Windows.Forms.Label();
+            this.ModelLabel = new System.Windows.Forms.Label();
+            this.OsDataLabel = new System.Windows.Forms.Label();
+            this.OsLabel = new System.Windows.Forms.Label();
+            this.ManufacturerDataLabel = new System.Windows.Forms.Label();
+            this.ManufacturerLabel = new System.Windows.Forms.Label();
+            this.PlatformDataLabel = new System.Windows.Forms.Label();
+            this.PlatformLabel = new System.Windows.Forms.Label();
+            this.ProductInfoLowerGroupBox = new System.Windows.Forms.GroupBox();
             this.HddDataLabel = new System.Windows.Forms.Label();
+            this.HddLabel = new System.Windows.Forms.Label();
+            this.LcdSizeDataLabel = new System.Windows.Forms.Label();
+            this.LcdSizeLabel = new System.Windows.Forms.Label();
+            this.WeightLabel = new System.Windows.Forms.Label();
+            this.MemoryDataLabel = new System.Windows.Forms.Label();
+            this.CpuSpeedLabel = new System.Windows.Forms.Label();
+            this.GpuTypeLabel = new System.Windows.Forms.Label();
+            this.MemoryLabel = new System.Windows.Forms.Label();
+            this.CpuNumberLabel = new System.Windows.Forms.Label();
+            this.WeightDataLabel = new System.Windows.Forms.Label();
+            this.CpuTypeLabel = new System.Windows.Forms.Label();
+            this.CpuSpeedDataLabel = new System.Windows.Forms.Label();
+            this.GpuTypeDataLabel = new System.Windows.Forms.Label();
+            this.CpuBrandLabel = new System.Windows.Forms.Label();
+            this.CpuNumberDataLabel = new System.Windows.Forms.Label();
+            this.CpuTypeDataLabel = new System.Windows.Forms.Label();
+            this.CpuBrandDataLabel = new System.Windows.Forms.Label();
             this.ProductInfoUpperGroupBox.SuspendLayout();
             this.ProductInfoLowerGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -175,19 +175,95 @@
             this.ProductInfoUpperGroupBox.TabStop = false;
             this.ProductInfoUpperGroupBox.Text = "Product Info";
             // 
+            // ModelDataLabel
+            // 
+            this.ModelDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ModelDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ModelDataLabel.Location = new System.Drawing.Point(459, 64);
+            this.ModelDataLabel.Name = "ModelDataLabel";
+            this.ModelDataLabel.Size = new System.Drawing.Size(268, 27);
+            this.ModelDataLabel.TabIndex = 1;
+            this.ModelDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ModelLabel
+            // 
+            this.ModelLabel.Location = new System.Drawing.Point(364, 51);
+            this.ModelLabel.Name = "ModelLabel";
+            this.ModelLabel.Size = new System.Drawing.Size(123, 40);
+            this.ModelLabel.TabIndex = 1;
+            this.ModelLabel.Text = "Model";
+            this.ModelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // OsDataLabel
+            // 
+            this.OsDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.OsDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OsDataLabel.Location = new System.Drawing.Point(459, 18);
+            this.OsDataLabel.Name = "OsDataLabel";
+            this.OsDataLabel.Size = new System.Drawing.Size(268, 27);
+            this.OsDataLabel.TabIndex = 1;
+            this.OsDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // OsLabel
+            // 
+            this.OsLabel.Location = new System.Drawing.Point(364, 11);
+            this.OsLabel.Name = "OsLabel";
+            this.OsLabel.Size = new System.Drawing.Size(123, 40);
+            this.OsLabel.TabIndex = 1;
+            this.OsLabel.Text = "OS";
+            this.OsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ManufacturerDataLabel
+            // 
+            this.ManufacturerDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ManufacturerDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ManufacturerDataLabel.Location = new System.Drawing.Point(109, 64);
+            this.ManufacturerDataLabel.Name = "ManufacturerDataLabel";
+            this.ManufacturerDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.ManufacturerDataLabel.TabIndex = 1;
+            this.ManufacturerDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // ManufacturerLabel
+            // 
+            this.ManufacturerLabel.Location = new System.Drawing.Point(6, 57);
+            this.ManufacturerLabel.Name = "ManufacturerLabel";
+            this.ManufacturerLabel.Size = new System.Drawing.Size(114, 40);
+            this.ManufacturerLabel.TabIndex = 1;
+            this.ManufacturerLabel.Text = "Manufacturer";
+            this.ManufacturerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PlatformDataLabel
+            // 
+            this.PlatformDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.PlatformDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PlatformDataLabel.Location = new System.Drawing.Point(109, 24);
+            this.PlatformDataLabel.Name = "PlatformDataLabel";
+            this.PlatformDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.PlatformDataLabel.TabIndex = 1;
+            this.PlatformDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // PlatformLabel
+            // 
+            this.PlatformLabel.Location = new System.Drawing.Point(2, 17);
+            this.PlatformLabel.Name = "PlatformLabel";
+            this.PlatformLabel.Size = new System.Drawing.Size(101, 40);
+            this.PlatformLabel.TabIndex = 1;
+            this.PlatformLabel.Text = "Platform";
+            this.PlatformLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ProductInfoLowerGroupBox
             // 
             this.ProductInfoLowerGroupBox.Controls.Add(this.HddDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.HddLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.LcdSizeDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.LcdSizeLabel);
-            this.ProductInfoLowerGroupBox.Controls.Add(this.WebcamLabel);
+            this.ProductInfoLowerGroupBox.Controls.Add(this.WeightLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.MemoryDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuSpeedLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.GpuTypeLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.MemoryLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuNumberLabel);
-            this.ProductInfoLowerGroupBox.Controls.Add(this.WebcamDataLabel);
+            this.ProductInfoLowerGroupBox.Controls.Add(this.WeightDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuTypeLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuSpeedDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.GpuTypeDataLabel);
@@ -202,185 +278,24 @@
             this.ProductInfoLowerGroupBox.TabStop = false;
             this.ProductInfoLowerGroupBox.Text = "Tech Specs";
             // 
-            // PlatformLabel
+            // HddDataLabel
             // 
-            this.PlatformLabel.Location = new System.Drawing.Point(2, 17);
-            this.PlatformLabel.Name = "PlatformLabel";
-            this.PlatformLabel.Size = new System.Drawing.Size(101, 40);
-            this.PlatformLabel.TabIndex = 1;
-            this.PlatformLabel.Text = "Platform";
-            this.PlatformLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HddDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.HddDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HddDataLabel.Location = new System.Drawing.Point(604, 31);
+            this.HddDataLabel.Name = "HddDataLabel";
+            this.HddDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.HddDataLabel.TabIndex = 1;
+            this.HddDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // PlatformDataLabel
+            // HddLabel
             // 
-            this.PlatformDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.PlatformDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PlatformDataLabel.Location = new System.Drawing.Point(109, 24);
-            this.PlatformDataLabel.Name = "PlatformDataLabel";
-            this.PlatformDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.PlatformDataLabel.TabIndex = 1;
-            this.PlatformDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ManufacturerLabel
-            // 
-            this.ManufacturerLabel.Location = new System.Drawing.Point(6, 57);
-            this.ManufacturerLabel.Name = "ManufacturerLabel";
-            this.ManufacturerLabel.Size = new System.Drawing.Size(114, 40);
-            this.ManufacturerLabel.TabIndex = 1;
-            this.ManufacturerLabel.Text = "Manufacturer";
-            this.ManufacturerLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ManufacturerDataLabel
-            // 
-            this.ManufacturerDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ManufacturerDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ManufacturerDataLabel.Location = new System.Drawing.Point(109, 64);
-            this.ManufacturerDataLabel.Name = "ManufacturerDataLabel";
-            this.ManufacturerDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.ManufacturerDataLabel.TabIndex = 1;
-            this.ManufacturerDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // OsLabel
-            // 
-            this.OsLabel.Location = new System.Drawing.Point(364, 11);
-            this.OsLabel.Name = "OsLabel";
-            this.OsLabel.Size = new System.Drawing.Size(123, 40);
-            this.OsLabel.TabIndex = 1;
-            this.OsLabel.Text = "OS";
-            this.OsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // OsDataLabel
-            // 
-            this.OsDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.OsDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.OsDataLabel.Location = new System.Drawing.Point(459, 18);
-            this.OsDataLabel.Name = "OsDataLabel";
-            this.OsDataLabel.Size = new System.Drawing.Size(268, 27);
-            this.OsDataLabel.TabIndex = 1;
-            this.OsDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ModelLabel
-            // 
-            this.ModelLabel.Location = new System.Drawing.Point(364, 51);
-            this.ModelLabel.Name = "ModelLabel";
-            this.ModelLabel.Size = new System.Drawing.Size(123, 40);
-            this.ModelLabel.TabIndex = 1;
-            this.ModelLabel.Text = "Model";
-            this.ModelLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // ModelDataLabel
-            // 
-            this.ModelDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ModelDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ModelDataLabel.Location = new System.Drawing.Point(459, 64);
-            this.ModelDataLabel.Name = "ModelDataLabel";
-            this.ModelDataLabel.Size = new System.Drawing.Size(268, 27);
-            this.ModelDataLabel.TabIndex = 1;
-            this.ModelDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MemoryLabel
-            // 
-            this.MemoryLabel.Location = new System.Drawing.Point(2, 24);
-            this.MemoryLabel.Name = "MemoryLabel";
-            this.MemoryLabel.Size = new System.Drawing.Size(101, 40);
-            this.MemoryLabel.TabIndex = 1;
-            this.MemoryLabel.Text = "Memory";
-            this.MemoryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MemoryDataLabel
-            // 
-            this.MemoryDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MemoryDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.MemoryDataLabel.Location = new System.Drawing.Point(109, 31);
-            this.MemoryDataLabel.Name = "MemoryDataLabel";
-            this.MemoryDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.MemoryDataLabel.TabIndex = 1;
-            this.MemoryDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuBrandLabel
-            // 
-            this.CpuBrandLabel.Location = new System.Drawing.Point(6, 64);
-            this.CpuBrandLabel.Name = "CpuBrandLabel";
-            this.CpuBrandLabel.Size = new System.Drawing.Size(97, 40);
-            this.CpuBrandLabel.TabIndex = 1;
-            this.CpuBrandLabel.Text = "CPU brand";
-            this.CpuBrandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuBrandDataLabel
-            // 
-            this.CpuBrandDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CpuBrandDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuBrandDataLabel.Location = new System.Drawing.Point(109, 71);
-            this.CpuBrandDataLabel.Name = "CpuBrandDataLabel";
-            this.CpuBrandDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.CpuBrandDataLabel.TabIndex = 1;
-            this.CpuBrandDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuTypeDataLabel
-            // 
-            this.CpuTypeDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CpuTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuTypeDataLabel.Location = new System.Drawing.Point(109, 111);
-            this.CpuTypeDataLabel.Name = "CpuTypeDataLabel";
-            this.CpuTypeDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.CpuTypeDataLabel.TabIndex = 1;
-            this.CpuTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuTypeLabel
-            // 
-            this.CpuTypeLabel.Location = new System.Drawing.Point(6, 104);
-            this.CpuTypeLabel.Name = "CpuTypeLabel";
-            this.CpuTypeLabel.Size = new System.Drawing.Size(97, 40);
-            this.CpuTypeLabel.TabIndex = 1;
-            this.CpuTypeLabel.Text = "CPU type";
-            this.CpuTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuNumberDataLabel
-            // 
-            this.CpuNumberDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CpuNumberDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuNumberDataLabel.Location = new System.Drawing.Point(358, 71);
-            this.CpuNumberDataLabel.Name = "CpuNumberDataLabel";
-            this.CpuNumberDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.CpuNumberDataLabel.TabIndex = 1;
-            this.CpuNumberDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuSpeedDataLabel
-            // 
-            this.CpuSpeedDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.CpuSpeedDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuSpeedDataLabel.Location = new System.Drawing.Point(358, 111);
-            this.CpuSpeedDataLabel.Name = "CpuSpeedDataLabel";
-            this.CpuSpeedDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.CpuSpeedDataLabel.TabIndex = 1;
-            this.CpuSpeedDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuNumberLabel
-            // 
-            this.CpuNumberLabel.Location = new System.Drawing.Point(255, 64);
-            this.CpuNumberLabel.Name = "CpuNumberLabel";
-            this.CpuNumberLabel.Size = new System.Drawing.Size(97, 40);
-            this.CpuNumberLabel.TabIndex = 1;
-            this.CpuNumberLabel.Text = "CPU number";
-            this.CpuNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // CpuSpeedLabel
-            // 
-            this.CpuSpeedLabel.Location = new System.Drawing.Point(255, 104);
-            this.CpuSpeedLabel.Name = "CpuSpeedLabel";
-            this.CpuSpeedLabel.Size = new System.Drawing.Size(97, 40);
-            this.CpuSpeedLabel.TabIndex = 1;
-            this.CpuSpeedLabel.Text = "CPU speed";
-            this.CpuSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // LcdSizeLabel
-            // 
-            this.LcdSizeLabel.Location = new System.Drawing.Point(251, 24);
-            this.LcdSizeLabel.Name = "LcdSizeLabel";
-            this.LcdSizeLabel.Size = new System.Drawing.Size(101, 40);
-            this.LcdSizeLabel.TabIndex = 1;
-            this.LcdSizeLabel.Text = "LCD size";
-            this.LcdSizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HddLabel.Location = new System.Drawing.Point(497, 24);
+            this.HddLabel.Name = "HddLabel";
+            this.HddLabel.Size = new System.Drawing.Size(101, 40);
+            this.HddLabel.TabIndex = 1;
+            this.HddLabel.Text = "HDD";
+            this.HddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LcdSizeDataLabel
             // 
@@ -392,25 +307,42 @@
             this.LcdSizeDataLabel.TabIndex = 1;
             this.LcdSizeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // GpuTypeDataLabel
+            // LcdSizeLabel
             // 
-            this.GpuTypeDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.GpuTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GpuTypeDataLabel.Location = new System.Drawing.Point(604, 71);
-            this.GpuTypeDataLabel.Name = "GpuTypeDataLabel";
-            this.GpuTypeDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.GpuTypeDataLabel.TabIndex = 1;
-            this.GpuTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LcdSizeLabel.Location = new System.Drawing.Point(251, 24);
+            this.LcdSizeLabel.Name = "LcdSizeLabel";
+            this.LcdSizeLabel.Size = new System.Drawing.Size(101, 40);
+            this.LcdSizeLabel.TabIndex = 1;
+            this.LcdSizeLabel.Text = "LCD size";
+            this.LcdSizeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // WebcamDataLabel
+            // WeightLabel
             // 
-            this.WebcamDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.WebcamDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.WebcamDataLabel.Location = new System.Drawing.Point(604, 111);
-            this.WebcamDataLabel.Name = "WebcamDataLabel";
-            this.WebcamDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.WebcamDataLabel.TabIndex = 1;
-            this.WebcamDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WeightLabel.Location = new System.Drawing.Point(501, 104);
+            this.WeightLabel.Name = "WeightLabel";
+            this.WeightLabel.Size = new System.Drawing.Size(97, 40);
+            this.WeightLabel.TabIndex = 1;
+            this.WeightLabel.Text = "Weight";
+            this.WeightLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // MemoryDataLabel
+            // 
+            this.MemoryDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MemoryDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MemoryDataLabel.Location = new System.Drawing.Point(109, 31);
+            this.MemoryDataLabel.Name = "MemoryDataLabel";
+            this.MemoryDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.MemoryDataLabel.TabIndex = 1;
+            this.MemoryDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuSpeedLabel
+            // 
+            this.CpuSpeedLabel.Location = new System.Drawing.Point(255, 104);
+            this.CpuSpeedLabel.Name = "CpuSpeedLabel";
+            this.CpuSpeedLabel.Size = new System.Drawing.Size(97, 40);
+            this.CpuSpeedLabel.TabIndex = 1;
+            this.CpuSpeedLabel.Text = "CPU speed";
+            this.CpuSpeedLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GpuTypeLabel
             // 
@@ -421,33 +353,101 @@
             this.GpuTypeLabel.Text = "GPU Type";
             this.GpuTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // WebcamLabel
+            // MemoryLabel
             // 
-            this.WebcamLabel.Location = new System.Drawing.Point(501, 104);
-            this.WebcamLabel.Name = "WebcamLabel";
-            this.WebcamLabel.Size = new System.Drawing.Size(97, 40);
-            this.WebcamLabel.TabIndex = 1;
-            this.WebcamLabel.Text = "WebCam";
-            this.WebcamLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MemoryLabel.Location = new System.Drawing.Point(2, 24);
+            this.MemoryLabel.Name = "MemoryLabel";
+            this.MemoryLabel.Size = new System.Drawing.Size(101, 40);
+            this.MemoryLabel.TabIndex = 1;
+            this.MemoryLabel.Text = "Memory";
+            this.MemoryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // HddLabel
+            // CpuNumberLabel
             // 
-            this.HddLabel.Location = new System.Drawing.Point(497, 24);
-            this.HddLabel.Name = "HddLabel";
-            this.HddLabel.Size = new System.Drawing.Size(101, 40);
-            this.HddLabel.TabIndex = 1;
-            this.HddLabel.Text = "HDD";
-            this.HddLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CpuNumberLabel.Location = new System.Drawing.Point(255, 64);
+            this.CpuNumberLabel.Name = "CpuNumberLabel";
+            this.CpuNumberLabel.Size = new System.Drawing.Size(97, 40);
+            this.CpuNumberLabel.TabIndex = 1;
+            this.CpuNumberLabel.Text = "CPU number";
+            this.CpuNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // HddDataLabel
+            // WeightDataLabel
             // 
-            this.HddDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.HddDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HddDataLabel.Location = new System.Drawing.Point(604, 31);
-            this.HddDataLabel.Name = "HddDataLabel";
-            this.HddDataLabel.Size = new System.Drawing.Size(129, 27);
-            this.HddDataLabel.TabIndex = 1;
-            this.HddDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WeightDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.WeightDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.WeightDataLabel.Location = new System.Drawing.Point(604, 111);
+            this.WeightDataLabel.Name = "WeightDataLabel";
+            this.WeightDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.WeightDataLabel.TabIndex = 1;
+            this.WeightDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuTypeLabel
+            // 
+            this.CpuTypeLabel.Location = new System.Drawing.Point(6, 104);
+            this.CpuTypeLabel.Name = "CpuTypeLabel";
+            this.CpuTypeLabel.Size = new System.Drawing.Size(97, 40);
+            this.CpuTypeLabel.TabIndex = 1;
+            this.CpuTypeLabel.Text = "CPU type";
+            this.CpuTypeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuSpeedDataLabel
+            // 
+            this.CpuSpeedDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuSpeedDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuSpeedDataLabel.Location = new System.Drawing.Point(358, 111);
+            this.CpuSpeedDataLabel.Name = "CpuSpeedDataLabel";
+            this.CpuSpeedDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.CpuSpeedDataLabel.TabIndex = 1;
+            this.CpuSpeedDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // GpuTypeDataLabel
+            // 
+            this.GpuTypeDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GpuTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GpuTypeDataLabel.Location = new System.Drawing.Point(604, 71);
+            this.GpuTypeDataLabel.Name = "GpuTypeDataLabel";
+            this.GpuTypeDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.GpuTypeDataLabel.TabIndex = 1;
+            this.GpuTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuBrandLabel
+            // 
+            this.CpuBrandLabel.Location = new System.Drawing.Point(6, 64);
+            this.CpuBrandLabel.Name = "CpuBrandLabel";
+            this.CpuBrandLabel.Size = new System.Drawing.Size(97, 40);
+            this.CpuBrandLabel.TabIndex = 1;
+            this.CpuBrandLabel.Text = "CPU brand";
+            this.CpuBrandLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuNumberDataLabel
+            // 
+            this.CpuNumberDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuNumberDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuNumberDataLabel.Location = new System.Drawing.Point(358, 71);
+            this.CpuNumberDataLabel.Name = "CpuNumberDataLabel";
+            this.CpuNumberDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.CpuNumberDataLabel.TabIndex = 1;
+            this.CpuNumberDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuTypeDataLabel
+            // 
+            this.CpuTypeDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuTypeDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuTypeDataLabel.Location = new System.Drawing.Point(109, 111);
+            this.CpuTypeDataLabel.Name = "CpuTypeDataLabel";
+            this.CpuTypeDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.CpuTypeDataLabel.TabIndex = 1;
+            this.CpuTypeDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // CpuBrandDataLabel
+            // 
+            this.CpuBrandDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuBrandDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuBrandDataLabel.Location = new System.Drawing.Point(109, 71);
+            this.CpuBrandDataLabel.Name = "CpuBrandDataLabel";
+            this.CpuBrandDataLabel.Size = new System.Drawing.Size(129, 27);
+            this.CpuBrandDataLabel.TabIndex = 1;
+            this.CpuBrandDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ProductInfoForm
             // 
@@ -509,11 +509,11 @@
         private System.Windows.Forms.Label HddLabel;
         private System.Windows.Forms.Label LcdSizeDataLabel;
         private System.Windows.Forms.Label LcdSizeLabel;
-        private System.Windows.Forms.Label WebcamLabel;
+        private System.Windows.Forms.Label WeightLabel;
         private System.Windows.Forms.Label CpuSpeedLabel;
         private System.Windows.Forms.Label GpuTypeLabel;
         private System.Windows.Forms.Label CpuNumberLabel;
-        private System.Windows.Forms.Label WebcamDataLabel;
+        private System.Windows.Forms.Label WeightDataLabel;
         private System.Windows.Forms.Label CpuSpeedDataLabel;
         private System.Windows.Forms.Label GpuTypeDataLabel;
         private System.Windows.Forms.Label CpuNumberDataLabel;

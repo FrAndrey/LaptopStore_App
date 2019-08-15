@@ -63,7 +63,7 @@ namespace Store_App
             CurrentSelectionBox.Text = cells[2].Value.ToString() + " " + cells[3].Value.ToString()
                + "  Price: " + cells[1].Value.ToString() + "$";
 
-            // Program.product.productID = int.Parse( cells[1].Value.ToString() );
+          
 
             Program.product.productID = short.Parse(cells[0].Value.ToString());
             Program.product.cost = decimal.Parse(cells[1].Value.ToString());
@@ -88,6 +88,7 @@ namespace Store_App
             Program.product.optical_drive = cells[20].Value.ToString();
             Program.product.Audio_type = cells[21].Value.ToString();
             Program.product.LAN = cells[22].Value.ToString();
+            Program.product.weight = cells[27].Value.ToString();
         }
 
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -123,6 +124,8 @@ namespace Store_App
                 outputString.WriteLine(Program.product.optical_drive);
                 outputString.WriteLine(Program.product.Audio_type);
                 outputString.WriteLine(Program.product.LAN);
+                outputString.WriteLine(Program.product.webcam);
+                outputString.WriteLine(Program.product.weight);
 
                 outputString.Close();
                 outputString.Dispose();

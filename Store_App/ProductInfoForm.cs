@@ -68,6 +68,7 @@ namespace Store_App
                 Program.product.optical_drive = inputStream.ReadLine();
                 Program.product.Audio_type = inputStream.ReadLine();
                 Program.product.LAN = inputStream.ReadLine();
+                Program.product.weight = inputStream.ReadLine();
 
                 inputStream.Close();
                 inputStream.Dispose();
@@ -90,7 +91,7 @@ namespace Store_App
             CpuSpeedDataLabel.Text = Program.product.CPU_speed.ToString();
             HddDataLabel.Text = Program.product.HDD_size.ToString();
             GpuTypeDataLabel.Text = Program.product.GPU_Type.ToString();
-            //WebcamDataLabel.Text = Program.product.webcam.ToString();
+            WeightDataLabel.Text = Program.product.weight.ToString();
 
 
         }
