@@ -14,6 +14,7 @@ namespace Store_App
         public static ProductInfoForm producInfoForm { get; set; }
         public static OrderForm orderForm { get; set; }
         public static product product { get; set; }
+        public static AboutBox aboutBox { get; set; }
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -30,6 +31,8 @@ namespace Store_App
             producInfoForm = new ProductInfoForm();
             orderForm = new OrderForm();
             product = new product();
+            aboutBox = new AboutBox();
+
             Application.Run(introForm);
            
         }

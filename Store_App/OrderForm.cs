@@ -34,5 +34,10 @@ namespace Store_App
             Application.Exit();
 
         }
+
+        private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Program.aboutBox.ShowDialog();
+        }
     }
 }
