@@ -36,7 +36,6 @@ namespace Store_App
         private void SelectFormNextButton_Click(object sender, EventArgs e)
         {
             this.Hide();
-            SaveOutput(sender, e);
             Program.producInfoForm.Show();
         }
 
@@ -123,8 +122,7 @@ namespace Store_App
                 outputString.WriteLine(Program.product.GPU_Type);
                 outputString.WriteLine(Program.product.optical_drive);
                 outputString.WriteLine(Program.product.Audio_type);
-                outputString.WriteLine(Program.product.LAN);
-                outputString.WriteLine(Program.product.webcam);
+                outputString.WriteLine(Program.product.LAN);   
                 outputString.WriteLine(Program.product.weight);
 
                 outputString.Close();

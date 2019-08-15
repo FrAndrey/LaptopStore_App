@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProductInfoForm));
             this.ProductInfoNextButton = new System.Windows.Forms.Button();
             this.ProductInfoCancelButton = new System.Windows.Forms.Button();
             this.ProductInfoBackButton = new System.Windows.Forms.Button();
@@ -65,13 +66,26 @@
             this.CpuNumberDataLabel = new System.Windows.Forms.Label();
             this.CpuTypeDataLabel = new System.Windows.Forms.Label();
             this.CpuBrandDataLabel = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProductInfoUpperGroupBox.SuspendLayout();
             this.ProductInfoLowerGroupBox.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // ProductInfoNextButton
             // 
-            this.ProductInfoNextButton.Location = new System.Drawing.Point(726, 342);
+            this.ProductInfoNextButton.Location = new System.Drawing.Point(717, 364);
             this.ProductInfoNextButton.Name = "ProductInfoNextButton";
             this.ProductInfoNextButton.Size = new System.Drawing.Size(75, 23);
             this.ProductInfoNextButton.TabIndex = 0;
@@ -81,7 +95,7 @@
             // 
             // ProductInfoCancelButton
             // 
-            this.ProductInfoCancelButton.Location = new System.Drawing.Point(632, 342);
+            this.ProductInfoCancelButton.Location = new System.Drawing.Point(623, 364);
             this.ProductInfoCancelButton.Name = "ProductInfoCancelButton";
             this.ProductInfoCancelButton.Size = new System.Drawing.Size(75, 23);
             this.ProductInfoCancelButton.TabIndex = 0;
@@ -91,7 +105,7 @@
             // 
             // ProductInfoBackButton
             // 
-            this.ProductInfoBackButton.Location = new System.Drawing.Point(470, 342);
+            this.ProductInfoBackButton.Location = new System.Drawing.Point(461, 364);
             this.ProductInfoBackButton.Name = "ProductInfoBackButton";
             this.ProductInfoBackButton.Size = new System.Drawing.Size(143, 23);
             this.ProductInfoBackButton.TabIndex = 0;
@@ -101,9 +115,9 @@
             // 
             // ProductIDLabel
             // 
-            this.ProductIDLabel.Location = new System.Drawing.Point(25, 9);
+            this.ProductIDLabel.Location = new System.Drawing.Point(54, 32);
             this.ProductIDLabel.Name = "ProductIDLabel";
-            this.ProductIDLabel.Size = new System.Drawing.Size(119, 40);
+            this.ProductIDLabel.Size = new System.Drawing.Size(77, 22);
             this.ProductIDLabel.TabIndex = 1;
             this.ProductIDLabel.Text = "Product ID";
             this.ProductIDLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,7 +126,7 @@
             // 
             this.ProductIDDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ProductIDDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProductIDDataLabel.Location = new System.Drawing.Point(134, 16);
+            this.ProductIDDataLabel.Location = new System.Drawing.Point(137, 31);
             this.ProductIDDataLabel.Name = "ProductIDDataLabel";
             this.ProductIDDataLabel.Size = new System.Drawing.Size(129, 27);
             this.ProductIDDataLabel.TabIndex = 1;
@@ -120,9 +134,9 @@
             // 
             // ConditionLabel
             // 
-            this.ConditionLabel.Location = new System.Drawing.Point(269, 9);
+            this.ConditionLabel.Location = new System.Drawing.Point(283, 28);
             this.ConditionLabel.Name = "ConditionLabel";
-            this.ConditionLabel.Size = new System.Drawing.Size(123, 40);
+            this.ConditionLabel.Size = new System.Drawing.Size(116, 32);
             this.ConditionLabel.TabIndex = 1;
             this.ConditionLabel.Text = "Condition";
             this.ConditionLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,7 +145,7 @@
             // 
             this.ConditionDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ConditionDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ConditionDataLabel.Location = new System.Drawing.Point(374, 16);
+            this.ConditionDataLabel.Location = new System.Drawing.Point(386, 33);
             this.ConditionDataLabel.Name = "ConditionDataLabel";
             this.ConditionDataLabel.Size = new System.Drawing.Size(129, 27);
             this.ConditionDataLabel.TabIndex = 1;
@@ -139,9 +153,9 @@
             // 
             // CostLabel
             // 
-            this.CostLabel.Location = new System.Drawing.Point(523, 9);
+            this.CostLabel.Location = new System.Drawing.Point(540, 29);
             this.CostLabel.Name = "CostLabel";
-            this.CostLabel.Size = new System.Drawing.Size(123, 40);
+            this.CostLabel.Size = new System.Drawing.Size(97, 34);
             this.CostLabel.TabIndex = 1;
             this.CostLabel.Text = "Cost";
             this.CostLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -150,7 +164,7 @@
             // 
             this.CostDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CostDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CostDataLabel.Location = new System.Drawing.Point(626, 16);
+            this.CostDataLabel.Location = new System.Drawing.Point(632, 33);
             this.CostDataLabel.Name = "CostDataLabel";
             this.CostDataLabel.Size = new System.Drawing.Size(129, 27);
             this.CostDataLabel.TabIndex = 1;
@@ -168,7 +182,7 @@
             this.ProductInfoUpperGroupBox.Controls.Add(this.PlatformDataLabel);
             this.ProductInfoUpperGroupBox.Controls.Add(this.PlatformLabel);
             this.ProductInfoUpperGroupBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ProductInfoUpperGroupBox.Location = new System.Drawing.Point(28, 52);
+            this.ProductInfoUpperGroupBox.Location = new System.Drawing.Point(28, 74);
             this.ProductInfoUpperGroupBox.Name = "ProductInfoUpperGroupBox";
             this.ProductInfoUpperGroupBox.Size = new System.Drawing.Size(747, 118);
             this.ProductInfoUpperGroupBox.TabIndex = 2;
@@ -181,7 +195,7 @@
             this.ModelDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ModelDataLabel.Location = new System.Drawing.Point(459, 64);
             this.ModelDataLabel.Name = "ModelDataLabel";
-            this.ModelDataLabel.Size = new System.Drawing.Size(268, 27);
+            this.ModelDataLabel.Size = new System.Drawing.Size(274, 27);
             this.ModelDataLabel.TabIndex = 1;
             this.ModelDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -200,7 +214,7 @@
             this.OsDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.OsDataLabel.Location = new System.Drawing.Point(459, 18);
             this.OsDataLabel.Name = "OsDataLabel";
-            this.OsDataLabel.Size = new System.Drawing.Size(268, 27);
+            this.OsDataLabel.Size = new System.Drawing.Size(274, 27);
             this.OsDataLabel.TabIndex = 1;
             this.OsDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -271,7 +285,7 @@
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuNumberDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuTypeDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuBrandDataLabel);
-            this.ProductInfoLowerGroupBox.Location = new System.Drawing.Point(28, 176);
+            this.ProductInfoLowerGroupBox.Location = new System.Drawing.Point(28, 198);
             this.ProductInfoLowerGroupBox.Name = "ProductInfoLowerGroupBox";
             this.ProductInfoLowerGroupBox.Size = new System.Drawing.Size(747, 160);
             this.ProductInfoLowerGroupBox.TabIndex = 2;
@@ -449,11 +463,93 @@
             this.CpuBrandDataLabel.TabIndex = 1;
             this.CpuBrandDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(804, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem
+            // 
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.openToolStripMenuItem,
+            this.toolStripSeparator,
+            this.saveToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItem});
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "&File";
+            // 
+            // openToolStripMenuItem
+            // 
+            this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
+            this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
+            this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Text = "&Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.LoadProduct);
+            // 
+            // toolStripSeparator
+            // 
+            this.toolStripSeparator.Name = "toolStripSeparator";
+            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            // 
+            // saveToolStripMenuItem
+            // 
+            this.saveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem.Image")));
+            this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
+            this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Text = "&Save";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "E&xit";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator5,
+            this.aboutToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "&Help";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Text = "&About...";
+            // 
+            // ProductOpenFileDialog
+            // 
+            this.ProductOpenFileDialog.FileName = "openFileDialog1";
+            // 
             // ProductInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(804, 381);
+            this.ClientSize = new System.Drawing.Size(804, 399);
             this.ControlBox = false;
             this.Controls.Add(this.ProductInfoLowerGroupBox);
             this.Controls.Add(this.ProductInfoUpperGroupBox);
@@ -466,7 +562,9 @@
             this.Controls.Add(this.ProductInfoBackButton);
             this.Controls.Add(this.ProductInfoCancelButton);
             this.Controls.Add(this.ProductInfoNextButton);
+            this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "ProductInfoForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductInfoForm";
@@ -474,7 +572,10 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ProductInfoForm_FormClosing);
             this.ProductInfoUpperGroupBox.ResumeLayout(false);
             this.ProductInfoLowerGroupBox.ResumeLayout(false);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -517,5 +618,17 @@
         private System.Windows.Forms.Label CpuSpeedDataLabel;
         private System.Windows.Forms.Label GpuTypeDataLabel;
         private System.Windows.Forms.Label CpuNumberDataLabel;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
+        private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog ProductOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog ProductSaveFileDialog;
     }
 }
