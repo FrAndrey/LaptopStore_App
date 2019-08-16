@@ -18,7 +18,7 @@ namespace Store_App
         {
             modelBuilder.Entity<product>()
                 .Property(e => e.cost)
-                .HasPrecision(19, 4);
+                .HasPrecision(19, 2);
         }
     }
 }
