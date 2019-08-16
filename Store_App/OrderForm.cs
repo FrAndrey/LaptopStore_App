@@ -47,6 +47,24 @@ namespace Store_App
             taxDataLabel.Text = $"{tax:C2}";
             var total = tax + Program.product.cost;
             totalDataLabel.Text = $"{total:C2}";
+
+
+            conditionDataLabel.Text = Program.product.condition;
+            manufDataLabel.Text = Program.product.manufacturer;
+            platformDataLabel.Text = Program.product.platform;
+            modelDataLabel.Text = Program.product.model;
+
+            LcdDataLabel.Text = Program.product.screensize;
+            CpuBDataLabel.Text = Program.product.CPU_brand;
+            CpuNDataLabel.Text = Program.product.CPU_number;
+            CpuTDataLabel.Text = Program.product.CPU_type;
+            CpuSDataLabel.Text = Program.product.CPU_speed;
+            memoryDataLabel.Text = Program.product.RAM_size;
+            HddDataLabel.Text = Program.product.HDD_size;
+            GpuTDataLabel.Text = Program.product.GPU_Type;
+            weightDataLabel.Text = Program.product.webcam;
+            OSDataLabel.Text = Program.product.OS;
+
         }
 
         private void PrintToolStripMenuItem_Click(object sender, EventArgs e)

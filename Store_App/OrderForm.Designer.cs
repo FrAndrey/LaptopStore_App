@@ -64,16 +64,16 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
+            this.LcdDataLabel = new System.Windows.Forms.Label();
+            this.CpuBDataLabel = new System.Windows.Forms.Label();
+            this.CpuNDataLabel = new System.Windows.Forms.Label();
+            this.HddDataLabel = new System.Windows.Forms.Label();
+            this.weightDataLabel = new System.Windows.Forms.Label();
+            this.memoryDataLabel = new System.Windows.Forms.Label();
+            this.CpuSDataLabel = new System.Windows.Forms.Label();
+            this.CpuTDataLabel = new System.Windows.Forms.Label();
+            this.GpuTDataLabel = new System.Windows.Forms.Label();
+            this.OSDataLabel = new System.Windows.Forms.Label();
             this.OrderFormProductGroupBox = new System.Windows.Forms.GroupBox();
             this.OrderFormCalculationGroupBox = new System.Windows.Forms.GroupBox();
             this.totalPrice = new System.Windows.Forms.Label();
@@ -315,7 +315,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 22);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Manufacturer";
+            this.label3.Text = "LCD Size";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
@@ -324,7 +324,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 22);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Manufacturer";
+            this.label4.Text = "CPU brand";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label6
@@ -333,7 +333,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 22);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Manufacturer";
+            this.label6.Text = "Memory";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label8
@@ -342,7 +342,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 22);
             this.label8.TabIndex = 5;
-            this.label8.Text = "Manufacturer";
+            this.label8.Text = "CPU type";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label9
@@ -351,7 +351,7 @@
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 22);
             this.label9.TabIndex = 5;
-            this.label9.Text = "Manufacturer";
+            this.label9.Text = "CPU number";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
@@ -360,7 +360,7 @@
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 22);
             this.label10.TabIndex = 5;
-            this.label10.Text = "Manufacturer";
+            this.label10.Text = "CPU speed";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label11
@@ -369,7 +369,7 @@
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 22);
             this.label11.TabIndex = 5;
-            this.label11.Text = "Manufacturer";
+            this.label11.Text = "HDD";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label12
@@ -378,7 +378,7 @@
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 22);
             this.label12.TabIndex = 5;
-            this.label12.Text = "Manufacturer";
+            this.label12.Text = "GPU type";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label13
@@ -387,7 +387,7 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 22);
             this.label13.TabIndex = 5;
-            this.label13.Text = "Manufacturer";
+            this.label13.Text = "Weight";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
@@ -396,137 +396,137 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(77, 22);
             this.label14.TabIndex = 5;
-            this.label14.Text = "Manufacturer";
+            this.label14.Text = "OS";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label15
+            // LcdDataLabel
             // 
-            this.label15.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label15.Location = new System.Drawing.Point(100, 111);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(109, 20);
-            this.label15.TabIndex = 4;
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LcdDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.LcdDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LcdDataLabel.Location = new System.Drawing.Point(100, 111);
+            this.LcdDataLabel.Name = "LcdDataLabel";
+            this.LcdDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.LcdDataLabel.TabIndex = 4;
+            this.LcdDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
+            // CpuBDataLabel
             // 
-            this.label16.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label16.Location = new System.Drawing.Point(99, 156);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(109, 20);
-            this.label16.TabIndex = 4;
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CpuBDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuBDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuBDataLabel.Location = new System.Drawing.Point(99, 156);
+            this.CpuBDataLabel.Name = "CpuBDataLabel";
+            this.CpuBDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.CpuBDataLabel.TabIndex = 4;
+            this.CpuBDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label17
+            // CpuNDataLabel
             // 
-            this.label17.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label17.Location = new System.Drawing.Point(99, 196);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(109, 20);
-            this.label17.TabIndex = 4;
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CpuNDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuNDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuNDataLabel.Location = new System.Drawing.Point(99, 196);
+            this.CpuNDataLabel.Name = "CpuNDataLabel";
+            this.CpuNDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.CpuNDataLabel.TabIndex = 4;
+            this.CpuNDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label18
+            // HddDataLabel
             // 
-            this.label18.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label18.Location = new System.Drawing.Point(99, 244);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(109, 20);
-            this.label18.TabIndex = 4;
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.HddDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.HddDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HddDataLabel.Location = new System.Drawing.Point(99, 244);
+            this.HddDataLabel.Name = "HddDataLabel";
+            this.HddDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.HddDataLabel.TabIndex = 4;
+            this.HddDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // weightDataLabel
             // 
-            this.label19.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label19.Location = new System.Drawing.Point(100, 284);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(109, 20);
-            this.label19.TabIndex = 4;
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.weightDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.weightDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.weightDataLabel.Location = new System.Drawing.Point(100, 284);
+            this.weightDataLabel.Name = "weightDataLabel";
+            this.weightDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.weightDataLabel.TabIndex = 4;
+            this.weightDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // memoryDataLabel
             // 
-            this.label20.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label20.Location = new System.Drawing.Point(327, 112);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(109, 20);
-            this.label20.TabIndex = 4;
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.memoryDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.memoryDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.memoryDataLabel.Location = new System.Drawing.Point(327, 112);
+            this.memoryDataLabel.Name = "memoryDataLabel";
+            this.memoryDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.memoryDataLabel.TabIndex = 4;
+            this.memoryDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // CpuSDataLabel
             // 
-            this.label21.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label21.Location = new System.Drawing.Point(326, 197);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(109, 20);
-            this.label21.TabIndex = 4;
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CpuSDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuSDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuSDataLabel.Location = new System.Drawing.Point(326, 197);
+            this.CpuSDataLabel.Name = "CpuSDataLabel";
+            this.CpuSDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.CpuSDataLabel.TabIndex = 4;
+            this.CpuSDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label22
+            // CpuTDataLabel
             // 
-            this.label22.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label22.Location = new System.Drawing.Point(326, 157);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(109, 20);
-            this.label22.TabIndex = 4;
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.CpuTDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.CpuTDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CpuTDataLabel.Location = new System.Drawing.Point(326, 157);
+            this.CpuTDataLabel.Name = "CpuTDataLabel";
+            this.CpuTDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.CpuTDataLabel.TabIndex = 4;
+            this.CpuTDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
+            // GpuTDataLabel
             // 
-            this.label23.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label23.Location = new System.Drawing.Point(326, 245);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(109, 20);
-            this.label23.TabIndex = 4;
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.GpuTDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.GpuTDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.GpuTDataLabel.Location = new System.Drawing.Point(326, 245);
+            this.GpuTDataLabel.Name = "GpuTDataLabel";
+            this.GpuTDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.GpuTDataLabel.TabIndex = 4;
+            this.GpuTDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label24
+            // OSDataLabel
             // 
-            this.label24.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label24.Location = new System.Drawing.Point(327, 285);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(109, 20);
-            this.label24.TabIndex = 4;
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.OSDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.OSDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OSDataLabel.Location = new System.Drawing.Point(327, 285);
+            this.OSDataLabel.Name = "OSDataLabel";
+            this.OSDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.OSDataLabel.TabIndex = 4;
+            this.OSDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OrderFormProductGroupBox
             // 
             this.OrderFormProductGroupBox.Controls.Add(this.modLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.modelDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label1);
-            this.OrderFormProductGroupBox.Controls.Add(this.label24);
+            this.OrderFormProductGroupBox.Controls.Add(this.OSDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.cLabel);
-            this.OrderFormProductGroupBox.Controls.Add(this.label19);
+            this.OrderFormProductGroupBox.Controls.Add(this.weightDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label5);
-            this.OrderFormProductGroupBox.Controls.Add(this.label23);
+            this.OrderFormProductGroupBox.Controls.Add(this.GpuTDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.pLabel);
-            this.OrderFormProductGroupBox.Controls.Add(this.label18);
+            this.OrderFormProductGroupBox.Controls.Add(this.HddDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label2);
-            this.OrderFormProductGroupBox.Controls.Add(this.label22);
+            this.OrderFormProductGroupBox.Controls.Add(this.CpuTDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label7);
-            this.OrderFormProductGroupBox.Controls.Add(this.label16);
+            this.OrderFormProductGroupBox.Controls.Add(this.CpuBDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.mLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.manufDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label3);
             this.OrderFormProductGroupBox.Controls.Add(this.platformDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label4);
-            this.OrderFormProductGroupBox.Controls.Add(this.label21);
+            this.OrderFormProductGroupBox.Controls.Add(this.CpuSDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label8);
-            this.OrderFormProductGroupBox.Controls.Add(this.label17);
+            this.OrderFormProductGroupBox.Controls.Add(this.CpuNDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label6);
-            this.OrderFormProductGroupBox.Controls.Add(this.label20);
+            this.OrderFormProductGroupBox.Controls.Add(this.memoryDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label11);
-            this.OrderFormProductGroupBox.Controls.Add(this.label15);
+            this.OrderFormProductGroupBox.Controls.Add(this.LcdDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label12);
             this.OrderFormProductGroupBox.Controls.Add(this.conditionDataLabel);
             this.OrderFormProductGroupBox.Controls.Add(this.label9);
@@ -706,16 +706,16 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label LcdDataLabel;
+        private System.Windows.Forms.Label CpuBDataLabel;
+        private System.Windows.Forms.Label CpuNDataLabel;
+        private System.Windows.Forms.Label HddDataLabel;
+        private System.Windows.Forms.Label weightDataLabel;
+        private System.Windows.Forms.Label memoryDataLabel;
+        private System.Windows.Forms.Label CpuSDataLabel;
+        private System.Windows.Forms.Label CpuTDataLabel;
+        private System.Windows.Forms.Label GpuTDataLabel;
+        private System.Windows.Forms.Label OSDataLabel;
         private System.Windows.Forms.GroupBox OrderFormProductGroupBox;
         private System.Windows.Forms.GroupBox OrderFormCalculationGroupBox;
         private System.Windows.Forms.Label priceLabel;
