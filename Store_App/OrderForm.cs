@@ -62,7 +62,7 @@ namespace Store_App
             memoryDataLabel.Text = Program.product.RAM_size;
             HddDataLabel.Text = Program.product.HDD_size;
             GpuTDataLabel.Text = Program.product.GPU_Type;
-            weightDataLabel.Text = Program.product.webcam;
+            weightDataLabel.Text = Program.product.weight;
             OSDataLabel.Text = Program.product.OS;
 
         }
