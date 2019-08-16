@@ -42,11 +42,11 @@ namespace Store_App
 
         private void OrderForm_Activated(object sender, EventArgs e)
         {
-            priceDataLabel.Text = Program.product.cost.ToString();
+            priceDataLabel.Text = $"{Program.product.cost:C2}";
             var tax = Program.product.cost * (decimal)0.13;
-            taxDataLabel.Text = tax.ToString();
+            taxDataLabel.Text = $"{tax:C2}";
             var total = tax + Program.product.cost;
-            totalDataLabel.Text = total.ToString();
+            totalDataLabel.Text = $"{total:C2}";
         }
     }
 }

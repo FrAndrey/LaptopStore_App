@@ -60,7 +60,7 @@ namespace Store_App
             CurrentSelectionBox.Text = " ";
 
             CurrentSelectionBox.Text = cells[2].Value.ToString() + " " + cells[3].Value.ToString()
-               + "  Price: " + cells[1].Value.ToString() + "$";
+               + "  Price: " + $"{cells[1].Value:F2}" + "$";
 
           
 
