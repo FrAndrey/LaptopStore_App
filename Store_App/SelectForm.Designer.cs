@@ -142,7 +142,7 @@
             this.dataGridTable.Name = "dataGridTable";
             this.dataGridTable.ReadOnly = true;
             this.dataGridTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridTable.Size = new System.Drawing.Size(817, 316);
+            this.dataGridTable.Size = new System.Drawing.Size(796, 311);
             this.dataGridTable.TabIndex = 1;
             this.dataGridTable.SelectionChanged += new System.EventHandler(this.DataGridTable_SelectionChanged);
             // 
@@ -410,7 +410,7 @@
             // 
             // SelectFormSelectionLabel
             // 
-            this.SelectFormSelectionLabel.Location = new System.Drawing.Point(31, 376);
+            this.SelectFormSelectionLabel.Location = new System.Drawing.Point(12, 367);
             this.SelectFormSelectionLabel.Name = "SelectFormSelectionLabel";
             this.SelectFormSelectionLabel.Size = new System.Drawing.Size(100, 23);
             this.SelectFormSelectionLabel.TabIndex = 2;
@@ -418,7 +418,7 @@
             // 
             // CurrentSelectionBox
             // 
-            this.CurrentSelectionBox.Location = new System.Drawing.Point(137, 373);
+            this.CurrentSelectionBox.Location = new System.Drawing.Point(118, 364);
             this.CurrentSelectionBox.Name = "CurrentSelectionBox";
             this.CurrentSelectionBox.ReadOnly = true;
             this.CurrentSelectionBox.Size = new System.Drawing.Size(411, 20);
@@ -427,9 +427,9 @@
             // 
             // SelectFormNextButton
             // 
-            this.SelectFormNextButton.Location = new System.Drawing.Point(747, 373);
+            this.SelectFormNextButton.Location = new System.Drawing.Point(699, 356);
             this.SelectFormNextButton.Name = "SelectFormNextButton";
-            this.SelectFormNextButton.Size = new System.Drawing.Size(75, 23);
+            this.SelectFormNextButton.Size = new System.Drawing.Size(93, 35);
             this.SelectFormNextButton.TabIndex = 4;
             this.SelectFormNextButton.Text = "Next";
             this.SelectFormNextButton.UseVisualStyleBackColor = true;
@@ -437,9 +437,9 @@
             // 
             // SelectFormCancelButton
             // 
-            this.SelectFormCancelButton.Location = new System.Drawing.Point(623, 371);
+            this.SelectFormCancelButton.Location = new System.Drawing.Point(580, 356);
             this.SelectFormCancelButton.Name = "SelectFormCancelButton";
-            this.SelectFormCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.SelectFormCancelButton.Size = new System.Drawing.Size(83, 35);
             this.SelectFormCancelButton.TabIndex = 5;
             this.SelectFormCancelButton.Text = "Cancel";
             this.SelectFormCancelButton.UseVisualStyleBackColor = true;
@@ -516,7 +516,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(837, 407);
+            this.ClientSize = new System.Drawing.Size(804, 399);
             this.ControlBox = false;
             this.Controls.Add(this.SelectFormCancelButton);
             this.Controls.Add(this.SelectFormNextButton);

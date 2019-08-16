@@ -35,6 +35,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,7 +86,6 @@
             this.priceDataLabel = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.OrderFormPictureBox = new System.Windows.Forms.PictureBox();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.OrderFormProductGroupBox.SuspendLayout();
             this.OrderFormCalculationGroupBox.SuspendLayout();
@@ -131,7 +131,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(816, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(804, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -150,6 +150,16 @@
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
             this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
@@ -223,14 +233,14 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 55);
+            this.label2.Location = new System.Drawing.Point(59, 66);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 2;
             // 
             // mLabel
             // 
-            this.mLabel.Location = new System.Drawing.Point(17, 46);
+            this.mLabel.Location = new System.Drawing.Point(17, 56);
             this.mLabel.Name = "mLabel";
             this.mLabel.Size = new System.Drawing.Size(77, 22);
             this.mLabel.TabIndex = 5;
@@ -241,7 +251,7 @@
             // 
             this.manufDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.manufDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.manufDataLabel.Location = new System.Drawing.Point(100, 48);
+            this.manufDataLabel.Location = new System.Drawing.Point(100, 58);
             this.manufDataLabel.Name = "manufDataLabel";
             this.manufDataLabel.Size = new System.Drawing.Size(109, 20);
             this.manufDataLabel.TabIndex = 4;
@@ -267,14 +277,14 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(286, 55);
+            this.label7.Location = new System.Drawing.Point(286, 66);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 13);
             this.label7.TabIndex = 2;
             // 
             // modLabel
             // 
-            this.modLabel.Location = new System.Drawing.Point(244, 46);
+            this.modLabel.Location = new System.Drawing.Point(244, 56);
             this.modLabel.Name = "modLabel";
             this.modLabel.Size = new System.Drawing.Size(77, 22);
             this.modLabel.TabIndex = 5;
@@ -295,7 +305,7 @@
             // 
             this.modelDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.modelDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.modelDataLabel.Location = new System.Drawing.Point(327, 48);
+            this.modelDataLabel.Location = new System.Drawing.Point(327, 58);
             this.modelDataLabel.Name = "modelDataLabel";
             this.modelDataLabel.Size = new System.Drawing.Size(109, 20);
             this.modelDataLabel.TabIndex = 4;
@@ -303,7 +313,7 @@
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(16, 110);
+            this.label3.Location = new System.Drawing.Point(16, 102);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(77, 22);
             this.label3.TabIndex = 5;
@@ -312,7 +322,7 @@
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(16, 154);
+            this.label4.Location = new System.Drawing.Point(17, 146);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(77, 22);
             this.label4.TabIndex = 5;
@@ -321,7 +331,7 @@
             // 
             // label6
             // 
-            this.label6.Location = new System.Drawing.Point(244, 110);
+            this.label6.Location = new System.Drawing.Point(244, 102);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 22);
             this.label6.TabIndex = 5;
@@ -330,7 +340,7 @@
             // 
             // label8
             // 
-            this.label8.Location = new System.Drawing.Point(244, 154);
+            this.label8.Location = new System.Drawing.Point(245, 146);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 22);
             this.label8.TabIndex = 5;
@@ -339,7 +349,7 @@
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(16, 194);
+            this.label9.Location = new System.Drawing.Point(17, 191);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 22);
             this.label9.TabIndex = 5;
@@ -348,7 +358,7 @@
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(244, 194);
+            this.label10.Location = new System.Drawing.Point(245, 191);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 22);
             this.label10.TabIndex = 5;
@@ -357,7 +367,7 @@
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(16, 242);
+            this.label11.Location = new System.Drawing.Point(17, 236);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(77, 22);
             this.label11.TabIndex = 5;
@@ -366,7 +376,7 @@
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(244, 242);
+            this.label12.Location = new System.Drawing.Point(245, 236);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(77, 22);
             this.label12.TabIndex = 5;
@@ -375,7 +385,7 @@
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(17, 283);
+            this.label13.Location = new System.Drawing.Point(17, 278);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(77, 22);
             this.label13.TabIndex = 5;
@@ -384,7 +394,7 @@
             // 
             // label14
             // 
-            this.label14.Location = new System.Drawing.Point(244, 283);
+            this.label14.Location = new System.Drawing.Point(244, 278);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(77, 22);
             this.label14.TabIndex = 5;
@@ -395,7 +405,7 @@
             // 
             this.LcdDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.LcdDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LcdDataLabel.Location = new System.Drawing.Point(100, 111);
+            this.LcdDataLabel.Location = new System.Drawing.Point(100, 102);
             this.LcdDataLabel.Name = "LcdDataLabel";
             this.LcdDataLabel.Size = new System.Drawing.Size(109, 20);
             this.LcdDataLabel.TabIndex = 4;
@@ -405,7 +415,7 @@
             // 
             this.CpuBDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CpuBDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuBDataLabel.Location = new System.Drawing.Point(99, 156);
+            this.CpuBDataLabel.Location = new System.Drawing.Point(100, 148);
             this.CpuBDataLabel.Name = "CpuBDataLabel";
             this.CpuBDataLabel.Size = new System.Drawing.Size(109, 20);
             this.CpuBDataLabel.TabIndex = 4;
@@ -415,7 +425,7 @@
             // 
             this.CpuNDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CpuNDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuNDataLabel.Location = new System.Drawing.Point(99, 196);
+            this.CpuNDataLabel.Location = new System.Drawing.Point(100, 193);
             this.CpuNDataLabel.Name = "CpuNDataLabel";
             this.CpuNDataLabel.Size = new System.Drawing.Size(109, 20);
             this.CpuNDataLabel.TabIndex = 4;
@@ -425,7 +435,7 @@
             // 
             this.HddDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.HddDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.HddDataLabel.Location = new System.Drawing.Point(99, 244);
+            this.HddDataLabel.Location = new System.Drawing.Point(100, 238);
             this.HddDataLabel.Name = "HddDataLabel";
             this.HddDataLabel.Size = new System.Drawing.Size(109, 20);
             this.HddDataLabel.TabIndex = 4;
@@ -435,7 +445,7 @@
             // 
             this.weightDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.weightDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.weightDataLabel.Location = new System.Drawing.Point(100, 284);
+            this.weightDataLabel.Location = new System.Drawing.Point(100, 279);
             this.weightDataLabel.Name = "weightDataLabel";
             this.weightDataLabel.Size = new System.Drawing.Size(109, 20);
             this.weightDataLabel.TabIndex = 4;
@@ -445,7 +455,7 @@
             // 
             this.memoryDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.memoryDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.memoryDataLabel.Location = new System.Drawing.Point(327, 112);
+            this.memoryDataLabel.Location = new System.Drawing.Point(327, 103);
             this.memoryDataLabel.Name = "memoryDataLabel";
             this.memoryDataLabel.Size = new System.Drawing.Size(109, 20);
             this.memoryDataLabel.TabIndex = 4;
@@ -455,7 +465,7 @@
             // 
             this.CpuSDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CpuSDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuSDataLabel.Location = new System.Drawing.Point(326, 197);
+            this.CpuSDataLabel.Location = new System.Drawing.Point(327, 194);
             this.CpuSDataLabel.Name = "CpuSDataLabel";
             this.CpuSDataLabel.Size = new System.Drawing.Size(109, 20);
             this.CpuSDataLabel.TabIndex = 4;
@@ -465,7 +475,7 @@
             // 
             this.CpuTDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.CpuTDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CpuTDataLabel.Location = new System.Drawing.Point(326, 157);
+            this.CpuTDataLabel.Location = new System.Drawing.Point(327, 149);
             this.CpuTDataLabel.Name = "CpuTDataLabel";
             this.CpuTDataLabel.Size = new System.Drawing.Size(109, 20);
             this.CpuTDataLabel.TabIndex = 4;
@@ -475,7 +485,7 @@
             // 
             this.GpuTDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.GpuTDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.GpuTDataLabel.Location = new System.Drawing.Point(326, 245);
+            this.GpuTDataLabel.Location = new System.Drawing.Point(327, 239);
             this.GpuTDataLabel.Name = "GpuTDataLabel";
             this.GpuTDataLabel.Size = new System.Drawing.Size(109, 20);
             this.GpuTDataLabel.TabIndex = 4;
@@ -485,7 +495,7 @@
             // 
             this.OSDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.OSDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.OSDataLabel.Location = new System.Drawing.Point(327, 285);
+            this.OSDataLabel.Location = new System.Drawing.Point(327, 280);
             this.OSDataLabel.Name = "OSDataLabel";
             this.OSDataLabel.Size = new System.Drawing.Size(109, 20);
             this.OSDataLabel.TabIndex = 4;
@@ -641,21 +651,11 @@
             this.OrderFormPictureBox.TabIndex = 8;
             this.OrderFormPictureBox.TabStop = false;
             // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
-            this.printToolStripMenuItem.Text = "&Print";
-            this.printToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
-            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 380);
+            this.ClientSize = new System.Drawing.Size(804, 399);
             this.ControlBox = false;
             this.Controls.Add(this.OrderFormPictureBox);
             this.Controls.Add(this.OrderFormCalculationGroupBox);

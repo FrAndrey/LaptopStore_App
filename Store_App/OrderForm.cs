@@ -64,7 +64,7 @@ namespace Store_App
             GpuTDataLabel.Text = Program.product.GPU_Type;
             weightDataLabel.Text = Program.product.weight;
             OSDataLabel.Text = Program.product.OS;
-
+            
         }
 
         private void PrintToolStripMenuItem_Click(object sender, EventArgs e)
