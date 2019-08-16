@@ -25,14 +25,14 @@ namespace Store_App
 
         private void ProductInfoNextButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Program.orderForm.Show();
+            this.Hide();
         }
 
         private void ProductInfoBackButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Program.selectForm.Show();
+            this.Hide(); 
         }
 
         private void ProductInfoCancelButton_Click(object sender, EventArgs e)
