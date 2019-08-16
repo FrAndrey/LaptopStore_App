@@ -35,7 +35,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,9 +84,12 @@
             this.label25 = new System.Windows.Forms.Label();
             this.priceDataLabel = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.OrderFormPictureBox = new System.Windows.Forms.PictureBox();
+            this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.OrderFormProductGroupBox.SuspendLayout();
             this.OrderFormCalculationGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderFormPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // OrderFormFinishButton
@@ -129,7 +131,7 @@
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(832, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(816, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -147,27 +149,17 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
-            // 
-            // printToolStripMenuItem
-            // 
-            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
-            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
-            this.printToolStripMenuItem.Text = "&Print";
-            this.printToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
+            this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
@@ -182,7 +174,7 @@
             // 
             this.goBackToolStripMenuItem.Name = "goBackToolStripMenuItem";
             this.goBackToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
-            this.goBackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.goBackToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
             this.goBackToolStripMenuItem.Text = "&Back";
             this.goBackToolStripMenuItem.Click += new System.EventHandler(this.OrderFormBackButton_Click);
             // 
@@ -639,12 +631,33 @@
             this.label27.Size = new System.Drawing.Size(0, 13);
             this.label27.TabIndex = 2;
             // 
+            // OrderFormPictureBox
+            // 
+            this.OrderFormPictureBox.Image = global::Store_App.Properties.Resources.laptop2;
+            this.OrderFormPictureBox.Location = new System.Drawing.Point(478, 16);
+            this.OrderFormPictureBox.Name = "OrderFormPictureBox";
+            this.OrderFormPictureBox.Size = new System.Drawing.Size(292, 142);
+            this.OrderFormPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.OrderFormPictureBox.TabIndex = 8;
+            this.OrderFormPictureBox.TabStop = false;
+            // 
+            // printToolStripMenuItem
+            // 
+            this.printToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem.Image")));
+            this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem.Name = "printToolStripMenuItem";
+            this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(832, 380);
+            this.ClientSize = new System.Drawing.Size(816, 380);
             this.ControlBox = false;
+            this.Controls.Add(this.OrderFormPictureBox);
             this.Controls.Add(this.OrderFormCalculationGroupBox);
             this.Controls.Add(this.OrderFormProductGroupBox);
             this.Controls.Add(this.OrderFormBackButton);
@@ -664,6 +677,7 @@
             this.OrderFormProductGroupBox.PerformLayout();
             this.OrderFormCalculationGroupBox.ResumeLayout(false);
             this.OrderFormCalculationGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OrderFormPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -727,5 +741,6 @@
         private System.Windows.Forms.Label taxDataLabel;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.PictureBox OrderFormPictureBox;
     }
 }
