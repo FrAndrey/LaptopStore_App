@@ -83,8 +83,18 @@
             this.label24 = new System.Windows.Forms.Label();
             this.OrderFormProductGroupBox = new System.Windows.Forms.GroupBox();
             this.OrderFormCalculationGroupBox = new System.Windows.Forms.GroupBox();
+            this.priceDataLabel = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.taxDataLabel = new System.Windows.Forms.Label();
+            this.taxLabel = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.totalDataLabel = new System.Windows.Forms.Label();
+            this.totalPrice = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.OrderFormProductGroupBox.SuspendLayout();
+            this.OrderFormCalculationGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // OrderFormFinishButton
@@ -593,12 +603,102 @@
             // 
             // OrderFormCalculationGroupBox
             // 
-            this.OrderFormCalculationGroupBox.Location = new System.Drawing.Point(545, 139);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.totalPrice);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.totalDataLabel);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.taxLabel);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.taxDataLabel);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.label29);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.priceLabel);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.label25);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.priceDataLabel);
+            this.OrderFormCalculationGroupBox.Controls.Add(this.label27);
+            this.OrderFormCalculationGroupBox.Location = new System.Drawing.Point(469, 160);
             this.OrderFormCalculationGroupBox.Name = "OrderFormCalculationGroupBox";
-            this.OrderFormCalculationGroupBox.Size = new System.Drawing.Size(237, 173);
+            this.OrderFormCalculationGroupBox.Size = new System.Drawing.Size(313, 152);
             this.OrderFormCalculationGroupBox.TabIndex = 7;
             this.OrderFormCalculationGroupBox.TabStop = false;
             this.OrderFormCalculationGroupBox.Text = "Your Price :";
+            // 
+            // priceDataLabel
+            // 
+            this.priceDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.priceDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.priceDataLabel.Location = new System.Drawing.Point(183, 26);
+            this.priceDataLabel.Name = "priceDataLabel";
+            this.priceDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.priceDataLabel.TabIndex = 4;
+            this.priceDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // priceLabel
+            // 
+            this.priceLabel.Location = new System.Drawing.Point(15, 24);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(77, 22);
+            this.priceLabel.TabIndex = 5;
+            this.priceLabel.Text = "Price";
+            this.priceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(67, 33);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(0, 13);
+            this.label27.TabIndex = 2;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(67, 73);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(0, 13);
+            this.label25.TabIndex = 2;
+            // 
+            // taxDataLabel
+            // 
+            this.taxDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.taxDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.taxDataLabel.Location = new System.Drawing.Point(183, 66);
+            this.taxDataLabel.Name = "taxDataLabel";
+            this.taxDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.taxDataLabel.TabIndex = 4;
+            this.taxDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // taxLabel
+            // 
+            this.taxLabel.Location = new System.Drawing.Point(15, 64);
+            this.taxLabel.Name = "taxLabel";
+            this.taxLabel.Size = new System.Drawing.Size(77, 22);
+            this.taxLabel.TabIndex = 5;
+            this.taxLabel.Text = "Tax";
+            this.taxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(67, 120);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 13);
+            this.label29.TabIndex = 2;
+            // 
+            // totalDataLabel
+            // 
+            this.totalDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.totalDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.totalDataLabel.Location = new System.Drawing.Point(183, 113);
+            this.totalDataLabel.Name = "totalDataLabel";
+            this.totalDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.totalDataLabel.TabIndex = 4;
+            this.totalDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // totalPrice
+            // 
+            this.totalPrice.Location = new System.Drawing.Point(15, 111);
+            this.totalPrice.Name = "totalPrice";
+            this.totalPrice.Size = new System.Drawing.Size(77, 22);
+            this.totalPrice.TabIndex = 5;
+            this.totalPrice.Text = "Total ";
+            this.totalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // OrderForm
             // 
@@ -617,11 +717,14 @@
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OrderForm";
+            this.Activated += new System.EventHandler(this.OrderForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderForm_FormClosing);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.OrderFormProductGroupBox.ResumeLayout(false);
             this.OrderFormProductGroupBox.PerformLayout();
+            this.OrderFormCalculationGroupBox.ResumeLayout(false);
+            this.OrderFormCalculationGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -683,5 +786,14 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox OrderFormProductGroupBox;
         private System.Windows.Forms.GroupBox OrderFormCalculationGroupBox;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.Label priceDataLabel;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label totalPrice;
+        private System.Windows.Forms.Label totalDataLabel;
+        private System.Windows.Forms.Label taxLabel;
+        private System.Windows.Forms.Label taxDataLabel;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label25;
     }
 }

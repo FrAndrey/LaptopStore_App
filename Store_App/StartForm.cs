@@ -25,8 +25,8 @@ namespace Store_App
 
         private void SelectFormButton_Click(object sender, EventArgs e)
         {
-            this.Hide();
             Program.selectForm.Show();
+            this.Hide();
         }
 
         private void ExitAppButton_Click(object sender, EventArgs e)

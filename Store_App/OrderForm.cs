@@ -39,5 +39,14 @@ namespace Store_App
         {
             Program.aboutBox.ShowDialog();
         }
+
+        private void OrderForm_Activated(object sender, EventArgs e)
+        {
+            priceDataLabel.Text = Program.product.cost.ToString();
+            var tax = Program.product.cost * (decimal)0.13;
+            taxDataLabel.Text = tax.ToString();
+            var total = tax + Program.product.cost;
+            totalDataLabel.Text = total.ToString();
+        }
     }
 }
