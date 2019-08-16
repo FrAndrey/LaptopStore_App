@@ -39,7 +39,7 @@ namespace Store_App
         {
             Application.Exit();
         }
-        private void LoadProduct(object sender, EventArgs e)
+        public void LoadProduct(object sender, EventArgs e)
         {
             ProductOpenFileDialog.FileName = "Product.txt";
             ProductOpenFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
