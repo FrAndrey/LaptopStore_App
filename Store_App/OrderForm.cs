@@ -48,5 +48,19 @@ namespace Store_App
             var total = tax + Program.product.cost;
             totalDataLabel.Text = $"{total:C2}";
         }
+
+        private void PrintToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Your selection is printing");
+        }
+
+        private void OrderFormFinishButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("                  " +
+                "  Thank you for your order.\n\n" +
+                "Your Order will be processed in 7-10 business days"
+                , "                        Order completed",MessageBoxButtons.OK);
+            Application.Exit();
+        }
     }
 }

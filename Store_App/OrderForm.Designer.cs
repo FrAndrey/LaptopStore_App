@@ -39,14 +39,7 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.goBackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label1 = new System.Windows.Forms.Label();
@@ -83,15 +76,15 @@
             this.label24 = new System.Windows.Forms.Label();
             this.OrderFormProductGroupBox = new System.Windows.Forms.GroupBox();
             this.OrderFormCalculationGroupBox = new System.Windows.Forms.GroupBox();
-            this.priceDataLabel = new System.Windows.Forms.Label();
-            this.priceLabel = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.taxDataLabel = new System.Windows.Forms.Label();
-            this.taxLabel = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.totalDataLabel = new System.Windows.Forms.Label();
             this.totalPrice = new System.Windows.Forms.Label();
+            this.totalDataLabel = new System.Windows.Forms.Label();
+            this.taxLabel = new System.Windows.Forms.Label();
+            this.taxDataLabel = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.priceDataLabel = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.OrderFormProductGroupBox.SuspendLayout();
             this.OrderFormCalculationGroupBox.SuspendLayout();
@@ -105,6 +98,7 @@
             this.OrderFormFinishButton.TabIndex = 0;
             this.OrderFormFinishButton.Text = "Finish";
             this.OrderFormFinishButton.UseVisualStyleBackColor = true;
+            this.OrderFormFinishButton.Click += new System.EventHandler(this.OrderFormFinishButton_Click);
             // 
             // OrderFormCancelButton
             // 
@@ -153,7 +147,7 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(193, 6);
             // 
             // printToolStripMenuItem
             // 
@@ -161,91 +155,36 @@
             this.printToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
             this.printToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.printToolStripMenuItem.Text = "&Print";
+            this.printToolStripMenuItem.Click += new System.EventHandler(this.PrintToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(193, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(196, 38);
             this.exitToolStripMenuItem.Text = "E&xit";
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem,
-            this.redoToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.cutToolStripMenuItem,
-            this.copyToolStripMenuItem,
-            this.pasteToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.selectAllToolStripMenuItem});
+            this.goBackToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "&Edit";
             // 
-            // undoToolStripMenuItem
+            // goBackToolStripMenuItem
             // 
-            this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
-            this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.undoToolStripMenuItem.Text = "&Undo";
-            // 
-            // redoToolStripMenuItem
-            // 
-            this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
-            this.redoToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.redoToolStripMenuItem.Text = "&Redo";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(141, 6);
-            // 
-            // cutToolStripMenuItem
-            // 
-            this.cutToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem.Image")));
-            this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.cutToolStripMenuItem.Text = "Cu&t";
-            // 
-            // copyToolStripMenuItem
-            // 
-            this.copyToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem.Image")));
-            this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.copyToolStripMenuItem.Text = "&Copy";
-            // 
-            // pasteToolStripMenuItem
-            // 
-            this.pasteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem.Image")));
-            this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
-            this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.pasteToolStripMenuItem.Text = "&Paste";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(141, 6);
-            // 
-            // selectAllToolStripMenuItem
-            // 
-            this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
-            this.selectAllToolStripMenuItem.Text = "Select &All";
+            this.goBackToolStripMenuItem.Name = "goBackToolStripMenuItem";
+            this.goBackToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
+            this.goBackToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.goBackToolStripMenuItem.Text = "&Back";
+            this.goBackToolStripMenuItem.Click += new System.EventHandler(this.OrderFormBackButton_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -619,67 +558,14 @@
             this.OrderFormCalculationGroupBox.TabStop = false;
             this.OrderFormCalculationGroupBox.Text = "Your Price :";
             // 
-            // priceDataLabel
+            // totalPrice
             // 
-            this.priceDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.priceDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.priceDataLabel.Location = new System.Drawing.Point(183, 26);
-            this.priceDataLabel.Name = "priceDataLabel";
-            this.priceDataLabel.Size = new System.Drawing.Size(109, 20);
-            this.priceDataLabel.TabIndex = 4;
-            this.priceDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // priceLabel
-            // 
-            this.priceLabel.Location = new System.Drawing.Point(15, 24);
-            this.priceLabel.Name = "priceLabel";
-            this.priceLabel.Size = new System.Drawing.Size(77, 22);
-            this.priceLabel.TabIndex = 5;
-            this.priceLabel.Text = "Price";
-            this.priceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(67, 33);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(0, 13);
-            this.label27.TabIndex = 2;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(67, 73);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(0, 13);
-            this.label25.TabIndex = 2;
-            // 
-            // taxDataLabel
-            // 
-            this.taxDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.taxDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.taxDataLabel.Location = new System.Drawing.Point(183, 66);
-            this.taxDataLabel.Name = "taxDataLabel";
-            this.taxDataLabel.Size = new System.Drawing.Size(109, 20);
-            this.taxDataLabel.TabIndex = 4;
-            this.taxDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // taxLabel
-            // 
-            this.taxLabel.Location = new System.Drawing.Point(15, 64);
-            this.taxLabel.Name = "taxLabel";
-            this.taxLabel.Size = new System.Drawing.Size(77, 22);
-            this.taxLabel.TabIndex = 5;
-            this.taxLabel.Text = "Tax";
-            this.taxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(67, 120);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(0, 13);
-            this.label29.TabIndex = 2;
+            this.totalPrice.Location = new System.Drawing.Point(15, 111);
+            this.totalPrice.Name = "totalPrice";
+            this.totalPrice.Size = new System.Drawing.Size(77, 22);
+            this.totalPrice.TabIndex = 5;
+            this.totalPrice.Text = "Total ";
+            this.totalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // totalDataLabel
             // 
@@ -691,14 +577,67 @@
             this.totalDataLabel.TabIndex = 4;
             this.totalDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // totalPrice
+            // taxLabel
             // 
-            this.totalPrice.Location = new System.Drawing.Point(15, 111);
-            this.totalPrice.Name = "totalPrice";
-            this.totalPrice.Size = new System.Drawing.Size(77, 22);
-            this.totalPrice.TabIndex = 5;
-            this.totalPrice.Text = "Total ";
-            this.totalPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.taxLabel.Location = new System.Drawing.Point(15, 64);
+            this.taxLabel.Name = "taxLabel";
+            this.taxLabel.Size = new System.Drawing.Size(77, 22);
+            this.taxLabel.TabIndex = 5;
+            this.taxLabel.Text = "Tax";
+            this.taxLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // taxDataLabel
+            // 
+            this.taxDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.taxDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.taxDataLabel.Location = new System.Drawing.Point(183, 66);
+            this.taxDataLabel.Name = "taxDataLabel";
+            this.taxDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.taxDataLabel.TabIndex = 4;
+            this.taxDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(67, 120);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(0, 13);
+            this.label29.TabIndex = 2;
+            // 
+            // priceLabel
+            // 
+            this.priceLabel.Location = new System.Drawing.Point(15, 24);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(77, 22);
+            this.priceLabel.TabIndex = 5;
+            this.priceLabel.Text = "Price";
+            this.priceLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(67, 73);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(0, 13);
+            this.label25.TabIndex = 2;
+            // 
+            // priceDataLabel
+            // 
+            this.priceDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.priceDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.priceDataLabel.Location = new System.Drawing.Point(183, 26);
+            this.priceDataLabel.Name = "priceDataLabel";
+            this.priceDataLabel.Size = new System.Drawing.Size(109, 20);
+            this.priceDataLabel.TabIndex = 4;
+            this.priceDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(67, 33);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(0, 13);
+            this.label27.TabIndex = 2;
             // 
             // OrderForm
             // 
@@ -742,14 +681,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem goBackToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Label label1;
