@@ -6,7 +6,11 @@ using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* Andrey Fr
+ * 301038409
+ * This is an application for purchasing computers
+ * 08/08/19
+ * */
 namespace Store_App
 {
     partial class AboutBox : Form

@@ -7,7 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+/* Andrey Fr
+ * 301038409
+ * This is an application for purchasing computers
+ * 08/08/19
+ * */
 namespace Store_App
 {
     public partial class OrderForm : Form
@@ -16,30 +20,50 @@ namespace Store_App
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// This is a method to close form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
 
         }
-
+        /// <summary>
+        /// Navigation - back
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderFormBackButton_Click(object sender, EventArgs e)
         {
             this.Hide();
             Program.producInfoForm.Show();
         }
-
+        /// <summary>
+        /// Navigation - exit
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderFormCancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
 
         }
-
+        /// <summary>
+        /// Show About form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Program.aboutBox.ShowDialog();
         }
-
+        /// <summary>
+        /// This is an event handler to load data
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderForm_Activated(object sender, EventArgs e)
         {
             priceDataLabel.Text = $"{Program.product.cost:C2}";
@@ -66,12 +90,20 @@ namespace Store_App
             OSDataLabel.Text = Program.product.OS;
             
         }
-
+        /// <summary>
+        /// Show print box
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PrintToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Your selection is printing");
         }
-
+        /// <summary>
+        /// Order confirmation
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OrderFormFinishButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("                  " +

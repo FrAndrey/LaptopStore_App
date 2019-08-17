@@ -10,7 +10,11 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
-
+/* Andrey Fr
+ * 301038409
+ * This is an application for purchasing computers
+ * 08/08/19
+ * */
 namespace Store_App
 {
     public partial class SelectForm : Form
