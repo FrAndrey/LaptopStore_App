@@ -181,6 +181,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\cabel.jpg" />
     <None Include="Resources\laptop2.jpg" />
     <None Include="bin\Debug\laptop.jpg" />
     <Content Include="Properties\dollarcomputers.sql" />

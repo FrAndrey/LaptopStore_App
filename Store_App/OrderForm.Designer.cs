@@ -668,7 +668,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "OrderForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "OrderForm";
+            this.Text = "Complete your order";
             this.Activated += new System.EventHandler(this.OrderForm_Activated);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OrderForm_FormClosing);
             this.menuStrip1.ResumeLayout(false);
