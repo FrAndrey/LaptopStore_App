@@ -21,28 +21,49 @@ namespace Store_App
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Navigation - Close form
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// Navigation - go futher
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoNextButton_Click(object sender, EventArgs e)
         {
             Program.orderForm.Show();
             this.Hide();
         }
-
+        /// <summary>
+        /// Navigation - go back
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoBackButton_Click(object sender, EventArgs e)
         {
             Program.selectForm.Show();
             this.Hide(); 
         }
-
+        /// <summary>
+        /// Navigation - quit the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoCancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        /// <summary>
+        /// This is a methoad to load order from the file
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void LoadProduct(object sender, EventArgs e)
         {
             ProductOpenFileDialog.FileName = "Product.txt";
@@ -88,6 +109,11 @@ namespace Store_App
                 ProductInfoForm_Activated(sender, e);
             }
         }
+        /// <summary>
+        /// Load data from the product class
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductInfoForm_Activated(object sender, EventArgs e)
         {
             
@@ -112,7 +138,11 @@ namespace Store_App
 
 
         }
-
+        /// <summary>
+        /// Save order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ProductSaveFileDialog.FileName = "Product.txt";

@@ -23,20 +23,30 @@ namespace Store_App
         {
             InitializeComponent();
         }
-
+        /// <summary>
+        /// Navigation - quit the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
-
         }
-
+        /// <summary>
+        /// Fill the table with data
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-
         }
-
+        /// <summary>
+        /// Navigation - go futher
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectFormNextButton_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -45,28 +55,30 @@ namespace Store_App
 
         private void DataGridTable_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
-
         }
-
+        /// <summary>
+        /// Navigation - exit the application
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectFormCancelButton_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// To load data from the cells of table to the product class
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void DataGridTable_SelectionChanged(object sender, EventArgs e)
         {
             var rowIndex = dataGridTable.CurrentCell.RowIndex;
             var rows = dataGridTable.Rows;
             var columnCount = dataGridTable.ColumnCount;
             var cells = rows[rowIndex].Cells;
-            // rows[rowIndex].Selected = true; 
             CurrentSelectionBox.Text = " ";
-
             CurrentSelectionBox.Text = cells[2].Value.ToString() + " " + cells[3].Value.ToString()
                + "  Price: " + $"{cells[1].Value:F2}" + "$";
-
-          
 
             Program.product.productID = short.Parse(cells[0].Value.ToString());
             Program.product.cost = decimal.Parse(cells[1].Value.ToString());
@@ -93,12 +105,20 @@ namespace Store_App
             Program.product.LAN = cells[22].Value.ToString();
             Program.product.weight = cells[27].Value.ToString();
         }
-
+/// <summary>
+/// Navigation - quit the application
+/// </summary>
+/// <param name="sender"></param>
+/// <param name="e"></param>
         private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
+        /// <summary>
+        /// This is a method to save order
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveOutput(object sender, EventArgs e)
         {
             using (StreamWriter outputString = new StreamWriter(
@@ -128,15 +148,10 @@ namespace Store_App
                 outputString.WriteLine(Program.product.Audio_type);
                 outputString.WriteLine(Program.product.LAN);   
                 outputString.WriteLine(Program.product.weight);
-
                 outputString.Close();
                 outputString.Dispose();
             }
-
-
-        }
-        
-
+        }   
 }
 }
 
