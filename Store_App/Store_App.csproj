@@ -181,6 +181,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\laptop3.jpg" />
     <None Include="Resources\me.jpeg" />
     <None Include="Resources\cabel.jpg" />
     <None Include="Resources\laptop2.jpg" />

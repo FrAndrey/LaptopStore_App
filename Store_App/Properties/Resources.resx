@@ -121,13 +121,16 @@
   <data name="laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\laptop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="me" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\me.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="laptop2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\laptop2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cabel.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="me" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\me.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="laptop3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\laptop3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

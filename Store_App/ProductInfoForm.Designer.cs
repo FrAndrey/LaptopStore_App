@@ -75,12 +75,14 @@
             this.selectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
+            this.confirmationLabel = new System.Windows.Forms.Label();
+            this.ProductInfoPictureBox = new System.Windows.Forms.PictureBox();
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.confirmationLabel = new System.Windows.Forms.Label();
             this.ProductInfoUpperGroupBox.SuspendLayout();
             this.ProductInfoLowerGroupBox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductInfoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // ProductInfoNextButton
@@ -115,7 +117,7 @@
             // 
             // ProductIDLabel
             // 
-            this.ProductIDLabel.Location = new System.Drawing.Point(54, 32);
+            this.ProductIDLabel.Location = new System.Drawing.Point(45, 33);
             this.ProductIDLabel.Name = "ProductIDLabel";
             this.ProductIDLabel.Size = new System.Drawing.Size(77, 22);
             this.ProductIDLabel.TabIndex = 1;
@@ -173,6 +175,7 @@
             // ProductInfoUpperGroupBox
             // 
             this.ProductInfoUpperGroupBox.BackColor = System.Drawing.SystemColors.Control;
+            this.ProductInfoUpperGroupBox.Controls.Add(this.ProductInfoPictureBox);
             this.ProductInfoUpperGroupBox.Controls.Add(this.ModelDataLabel);
             this.ProductInfoUpperGroupBox.Controls.Add(this.ModelLabel);
             this.ProductInfoUpperGroupBox.Controls.Add(this.OsDataLabel);
@@ -521,6 +524,26 @@
             // 
             this.ProductOpenFileDialog.FileName = "openFileDialog1";
             // 
+            // confirmationLabel
+            // 
+            this.confirmationLabel.AutoSize = true;
+            this.confirmationLabel.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmationLabel.Location = new System.Drawing.Point(53, 361);
+            this.confirmationLabel.Name = "confirmationLabel";
+            this.confirmationLabel.Size = new System.Drawing.Size(201, 19);
+            this.confirmationLabel.TabIndex = 4;
+            this.confirmationLabel.Text = "Click Next to Confirm selection";
+            // 
+            // ProductInfoPictureBox
+            // 
+            this.ProductInfoPictureBox.Image = global::Store_App.Properties.Resources.laptop3;
+            this.ProductInfoPictureBox.Location = new System.Drawing.Point(244, 11);
+            this.ProductInfoPictureBox.Name = "ProductInfoPictureBox";
+            this.ProductInfoPictureBox.Size = new System.Drawing.Size(163, 101);
+            this.ProductInfoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ProductInfoPictureBox.TabIndex = 2;
+            this.ProductInfoPictureBox.TabStop = false;
+            // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem.Image")));
@@ -540,16 +563,6 @@
             this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
-            // 
-            // confirmationLabel
-            // 
-            this.confirmationLabel.AutoSize = true;
-            this.confirmationLabel.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmationLabel.Location = new System.Drawing.Point(53, 361);
-            this.confirmationLabel.Name = "confirmationLabel";
-            this.confirmationLabel.Size = new System.Drawing.Size(201, 19);
-            this.confirmationLabel.TabIndex = 4;
-            this.confirmationLabel.Text = "Click Next to Confirm selection";
             // 
             // ProductInfoForm
             // 
@@ -581,6 +594,7 @@
             this.ProductInfoLowerGroupBox.ResumeLayout(false);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductInfoPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -637,5 +651,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem selectAnotherProductToolStripMenuItem;
         private System.Windows.Forms.Label confirmationLabel;
+        private System.Windows.Forms.PictureBox ProductInfoPictureBox;
     }
 }

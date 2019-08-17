@@ -41,7 +41,7 @@
             // 
             this.WelcomeLabel.AutoSize = true;
             this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.WelcomeLabel.Location = new System.Drawing.Point(63, 22);
+            this.WelcomeLabel.Location = new System.Drawing.Point(73, 17);
             this.WelcomeLabel.Name = "WelcomeLabel";
             this.WelcomeLabel.Size = new System.Drawing.Size(126, 31);
             this.WelcomeLabel.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(106, 48);
+            this.label1.Location = new System.Drawing.Point(112, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 31);
             this.label1.TabIndex = 0;
@@ -61,7 +61,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 176);
+            this.label2.Location = new System.Drawing.Point(31, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(225, 31);
             this.label2.TabIndex = 0;
@@ -75,7 +75,7 @@
             // IntroPictureBox
             // 
             this.IntroPictureBox.Image = global::Store_App.Properties.Resources.laptop;
-            this.IntroPictureBox.Location = new System.Drawing.Point(69, 82);
+            this.IntroPictureBox.Location = new System.Drawing.Point(74, 82);
             this.IntroPictureBox.Name = "IntroPictureBox";
             this.IntroPictureBox.Size = new System.Drawing.Size(125, 91);
             this.IntroPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

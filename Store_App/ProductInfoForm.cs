@@ -89,7 +89,7 @@ namespace Store_App
             
             ProductIDDataLabel.Text = Program.product.productID.ToString();
             ConditionDataLabel.Text = Program.product.condition.ToString();
-            CostDataLabel.Text = Program.product.cost.ToString();
+            CostDataLabel.Text = $"{Program.product.cost:C2}";
 
             PlatformDataLabel.Text = Program.product.platform.ToString();
             OsDataLabel.Text = Program.product.OS.ToString();
