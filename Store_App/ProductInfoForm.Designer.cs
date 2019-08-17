@@ -73,10 +73,10 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.toolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.selectAnotherProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ProductOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.ProductSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.ProductInfoUpperGroupBox.SuspendLayout();
             this.ProductInfoLowerGroupBox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -84,9 +84,9 @@
             // 
             // ProductInfoNextButton
             // 
-            this.ProductInfoNextButton.Location = new System.Drawing.Point(717, 364);
+            this.ProductInfoNextButton.Location = new System.Drawing.Point(671, 356);
             this.ProductInfoNextButton.Name = "ProductInfoNextButton";
-            this.ProductInfoNextButton.Size = new System.Drawing.Size(75, 23);
+            this.ProductInfoNextButton.Size = new System.Drawing.Size(121, 31);
             this.ProductInfoNextButton.TabIndex = 0;
             this.ProductInfoNextButton.Text = "Next";
             this.ProductInfoNextButton.UseVisualStyleBackColor = true;
@@ -94,9 +94,9 @@
             // 
             // ProductInfoCancelButton
             // 
-            this.ProductInfoCancelButton.Location = new System.Drawing.Point(623, 364);
+            this.ProductInfoCancelButton.Location = new System.Drawing.Point(573, 356);
             this.ProductInfoCancelButton.Name = "ProductInfoCancelButton";
-            this.ProductInfoCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.ProductInfoCancelButton.Size = new System.Drawing.Size(77, 31);
             this.ProductInfoCancelButton.TabIndex = 0;
             this.ProductInfoCancelButton.Text = "Cancel";
             this.ProductInfoCancelButton.UseVisualStyleBackColor = true;
@@ -104,9 +104,9 @@
             // 
             // ProductInfoBackButton
             // 
-            this.ProductInfoBackButton.Location = new System.Drawing.Point(461, 364);
+            this.ProductInfoBackButton.Location = new System.Drawing.Point(395, 356);
             this.ProductInfoBackButton.Name = "ProductInfoBackButton";
-            this.ProductInfoBackButton.Size = new System.Drawing.Size(143, 23);
+            this.ProductInfoBackButton.Size = new System.Drawing.Size(158, 31);
             this.ProductInfoBackButton.TabIndex = 0;
             this.ProductInfoBackButton.Text = "Select Another Product";
             this.ProductInfoBackButton.UseVisualStyleBackColor = true;
@@ -181,7 +181,7 @@
             this.ProductInfoUpperGroupBox.Controls.Add(this.PlatformDataLabel);
             this.ProductInfoUpperGroupBox.Controls.Add(this.PlatformLabel);
             this.ProductInfoUpperGroupBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ProductInfoUpperGroupBox.Location = new System.Drawing.Point(28, 74);
+            this.ProductInfoUpperGroupBox.Location = new System.Drawing.Point(28, 66);
             this.ProductInfoUpperGroupBox.Name = "ProductInfoUpperGroupBox";
             this.ProductInfoUpperGroupBox.Size = new System.Drawing.Size(747, 118);
             this.ProductInfoUpperGroupBox.TabIndex = 2;
@@ -284,7 +284,7 @@
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuNumberDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuTypeDataLabel);
             this.ProductInfoLowerGroupBox.Controls.Add(this.CpuBrandDataLabel);
-            this.ProductInfoLowerGroupBox.Location = new System.Drawing.Point(28, 198);
+            this.ProductInfoLowerGroupBox.Location = new System.Drawing.Point(28, 190);
             this.ProductInfoLowerGroupBox.Name = "ProductInfoLowerGroupBox";
             this.ProductInfoLowerGroupBox.Size = new System.Drawing.Size(747, 160);
             this.ProductInfoLowerGroupBox.TabIndex = 2;
@@ -491,14 +491,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "&Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.LoadProduct);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -506,24 +506,20 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "&Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
-            // 
-            // ProductOpenFileDialog
-            // 
-            this.ProductOpenFileDialog.FileName = "openFileDialog1";
             // 
             // toolStripMenuItem
             // 
@@ -539,6 +535,10 @@
             this.selectAnotherProductToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
             this.selectAnotherProductToolStripMenuItem.Text = "Select Another Product";
             this.selectAnotherProductToolStripMenuItem.Click += new System.EventHandler(this.ProductInfoBackButton_Click);
+            // 
+            // ProductOpenFileDialog
+            // 
+            this.ProductOpenFileDialog.FileName = "openFileDialog1";
             // 
             // ProductInfoForm
             // 

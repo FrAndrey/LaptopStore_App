@@ -94,9 +94,9 @@
             // 
             // OrderFormFinishButton
             // 
-            this.OrderFormFinishButton.Location = new System.Drawing.Point(707, 346);
+            this.OrderFormFinishButton.Location = new System.Drawing.Point(688, 359);
             this.OrderFormFinishButton.Name = "OrderFormFinishButton";
-            this.OrderFormFinishButton.Size = new System.Drawing.Size(75, 23);
+            this.OrderFormFinishButton.Size = new System.Drawing.Size(104, 32);
             this.OrderFormFinishButton.TabIndex = 0;
             this.OrderFormFinishButton.Text = "Finish";
             this.OrderFormFinishButton.UseVisualStyleBackColor = true;
@@ -104,9 +104,9 @@
             // 
             // OrderFormCancelButton
             // 
-            this.OrderFormCancelButton.Location = new System.Drawing.Point(610, 346);
+            this.OrderFormCancelButton.Location = new System.Drawing.Point(586, 359);
             this.OrderFormCancelButton.Name = "OrderFormCancelButton";
-            this.OrderFormCancelButton.Size = new System.Drawing.Size(75, 23);
+            this.OrderFormCancelButton.Size = new System.Drawing.Size(70, 32);
             this.OrderFormCancelButton.TabIndex = 0;
             this.OrderFormCancelButton.Text = "Cancel";
             this.OrderFormCancelButton.UseVisualStyleBackColor = true;
@@ -114,9 +114,9 @@
             // 
             // OrderFormBackButton
             // 
-            this.OrderFormBackButton.Location = new System.Drawing.Point(497, 346);
+            this.OrderFormBackButton.Location = new System.Drawing.Point(440, 359);
             this.OrderFormBackButton.Name = "OrderFormBackButton";
-            this.OrderFormBackButton.Size = new System.Drawing.Size(75, 23);
+            this.OrderFormBackButton.Size = new System.Drawing.Size(105, 32);
             this.OrderFormBackButton.TabIndex = 0;
             this.OrderFormBackButton.Text = "Back";
             this.OrderFormBackButton.UseVisualStyleBackColor = true;
@@ -553,7 +553,7 @@
             this.OrderFormCalculationGroupBox.Controls.Add(this.label25);
             this.OrderFormCalculationGroupBox.Controls.Add(this.priceDataLabel);
             this.OrderFormCalculationGroupBox.Controls.Add(this.label27);
-            this.OrderFormCalculationGroupBox.Location = new System.Drawing.Point(469, 160);
+            this.OrderFormCalculationGroupBox.Location = new System.Drawing.Point(475, 194);
             this.OrderFormCalculationGroupBox.Name = "OrderFormCalculationGroupBox";
             this.OrderFormCalculationGroupBox.Size = new System.Drawing.Size(313, 152);
             this.OrderFormCalculationGroupBox.TabIndex = 7;
@@ -562,7 +562,7 @@
             // 
             // totalPrice
             // 
-            this.totalPrice.Location = new System.Drawing.Point(15, 111);
+            this.totalPrice.Location = new System.Drawing.Point(15, 109);
             this.totalPrice.Name = "totalPrice";
             this.totalPrice.Size = new System.Drawing.Size(77, 22);
             this.totalPrice.TabIndex = 5;
@@ -573,7 +573,7 @@
             // 
             this.totalDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.totalDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.totalDataLabel.Location = new System.Drawing.Point(183, 113);
+            this.totalDataLabel.Location = new System.Drawing.Point(183, 111);
             this.totalDataLabel.Name = "totalDataLabel";
             this.totalDataLabel.Size = new System.Drawing.Size(109, 20);
             this.totalDataLabel.TabIndex = 4;
@@ -581,7 +581,7 @@
             // 
             // taxLabel
             // 
-            this.taxLabel.Location = new System.Drawing.Point(15, 64);
+            this.taxLabel.Location = new System.Drawing.Point(15, 60);
             this.taxLabel.Name = "taxLabel";
             this.taxLabel.Size = new System.Drawing.Size(77, 22);
             this.taxLabel.TabIndex = 5;
@@ -592,7 +592,7 @@
             // 
             this.taxDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.taxDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.taxDataLabel.Location = new System.Drawing.Point(183, 66);
+            this.taxDataLabel.Location = new System.Drawing.Point(183, 60);
             this.taxDataLabel.Name = "taxDataLabel";
             this.taxDataLabel.Size = new System.Drawing.Size(109, 20);
             this.taxDataLabel.TabIndex = 4;
@@ -601,14 +601,14 @@
             // label29
             // 
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(67, 120);
+            this.label29.Location = new System.Drawing.Point(67, 118);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(0, 13);
             this.label29.TabIndex = 2;
             // 
             // priceLabel
             // 
-            this.priceLabel.Location = new System.Drawing.Point(15, 24);
+            this.priceLabel.Location = new System.Drawing.Point(15, 36);
             this.priceLabel.Name = "priceLabel";
             this.priceLabel.Size = new System.Drawing.Size(77, 22);
             this.priceLabel.TabIndex = 5;
@@ -618,7 +618,7 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(67, 73);
+            this.label25.Location = new System.Drawing.Point(67, 67);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(0, 13);
             this.label25.TabIndex = 2;
@@ -627,7 +627,7 @@
             // 
             this.priceDataLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.priceDataLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.priceDataLabel.Location = new System.Drawing.Point(183, 26);
+            this.priceDataLabel.Location = new System.Drawing.Point(183, 38);
             this.priceDataLabel.Name = "priceDataLabel";
             this.priceDataLabel.Size = new System.Drawing.Size(109, 20);
             this.priceDataLabel.TabIndex = 4;
@@ -636,7 +636,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(67, 33);
+            this.label27.Location = new System.Drawing.Point(67, 45);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(0, 13);
             this.label27.TabIndex = 2;
@@ -644,7 +644,7 @@
             // OrderFormPictureBox
             // 
             this.OrderFormPictureBox.Image = global::Store_App.Properties.Resources.laptop2;
-            this.OrderFormPictureBox.Location = new System.Drawing.Point(478, 16);
+            this.OrderFormPictureBox.Location = new System.Drawing.Point(475, 27);
             this.OrderFormPictureBox.Name = "OrderFormPictureBox";
             this.OrderFormPictureBox.Size = new System.Drawing.Size(292, 142);
             this.OrderFormPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
